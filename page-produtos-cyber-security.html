@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+        <!-- Google Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" /> -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+		<link rel="stylesheet" href="./styles/css/style.css" />
+
+
+        <!-- @TODO move to template -->
+        <!-- SEO -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PWG8FCMC');</script>
+
+		<?php wp_head(); ?>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" aria-label="Omid Solutions">
+                    <img src="/images/logo-white-horizontal.svg" width="208" height="69" aria-hidden="true" />
+                </a>
+
+                <nav class="menu" data-header-menu>
+                    <ul class="list">
+                        <a href="/sobre">Sobre</a>
+                        <div class="group">
+                            <a href="#" class="has-sublist" data-has-sublist>Produtos</a>
+                            <ul class="sublist" data-sublist>
+                                <a href="/solucoes/omid-cloud">Omid Cloud</a>
+                                <a href="/solucoes/data-center">Data Centers</a>
+                                <a href="/solucoes/cyber-security">Cibersegurança</a>
+                                <a href="/solucoes/it-services">Soluções de TI</a>
+                            </ul>
+                        </div>
+                        <a href="/blog">Blog</a>
+                        <a href="/integridade-e-compliance">Integridade e Compliance</a>
+
+                        <div class="group">
+                            <a href="#" class="has-sublist" data-has-sublist>Configurador</a>
+                            <ul class="sublist" data-sublist>
+                                <a href="https://app.omidsolutions.com/login" target="_blank">Configurar agora</a>
+                            </ul>
+                        </div>
+                    </ul>
+
+                    <button data-open-form href="#" class="button-primary">Contato</button>
+                </nav>
+
+                <button class="hamburger" data-header-openner aria-label="abrir menu">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+<!-- Main -->
+<main class="page-cyber-security">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__container">
+			<h1 class="section-title">
+				Responda a <strong>ameaças cibernéticas</strong> com confiança e eficácia
+			</h1>
+            <p class="base">
+            Conte com completas soluções de segurança cibernética para manter o ambiente computacional da sua empresa protegido. O nosso Centro de Defesa Cibernético se encarregará das ameaças digitais para que você possa se concentrar e crescer no mundo real.
+            </p>
+
+            <a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary arrow">
+                <span>COMECE JÁ</span>
+            </a>
+        </div>
+
+        <div class="bg">
+            <img
+                src="/images/cyber-security/hero-bg.png"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="610"
+                alt=""
+            />
+        </div>
+    </section>
+
+        <!-- Services First -->
+    <section class="services-first spacing">
+    <div class="container services-first__container">
+        <span class="span center">CENTRO DE DEFESA CIBERNÉTICA 24X07X365</span>
+        <h2 class="section-title center">Serviços continuados de cibersegurança</h2>
+        <p class="base center">
+        Esteja o seu ambiente computacional na nuvem ou em datacenter on-premise, oferecemos planos feitos sob medida para mantê-lo seguro. Conheça nossos serviços gerenciados. 
+        </p>
+
+        <div class="accordion-container services-first-acc">
+           
+        
+        <div class="ac card-01">
+                <div class="ac-header">
+                    <button type="button" class="ac-trigger">
+                        <span class="span">OSR - Omid Safe Restore                        </span>
+                        <h3 class="section-title" style="--w: 20ch">
+                        Backups com garantia de restore
+                        </h3>
+                        <div class="svg">
+                            <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="16"
+                                    cy="16"
+                                    r="16"
+                                    transform="rotate(-180 16 16)"
+                                    fill="white"
+                                ></circle>
+                                <path
+                                    d="M14.2875 11.5912L22.2578 19.5606L20.9486 20.8698L12.9792 12.9014L12.9792 19.9245L11.1274 19.9245L11.1274 9.73938L21.3125 9.73938L21.3125 11.5912L14.2875 11.5912Z"
+                                    fill="#E94B57"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="ac-panel">
+                    <p class="ac-text">
+                    Conte com o backup gerenciado de 2ª instância que oferece a tranquilidade de que o restore será possível caso o seu backup principal tenha sido perdido ou criptografado em um ataque cibernético.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="ac card-02">
+                <div class="ac-header">
+                    <button type="button" class="ac-trigger">
+                        <span class="span">Security incident monitoring</span>
+                        <h3 class="section-title" style="--w: 17ch">
+                        Monitoramento contínuo contra ameaças
+                        </h3>
+                        <div class="svg">
+                            <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="16"
+                                    cy="16"
+                                    r="16"
+                                    transform="rotate(-180 16 16)"
+                                    fill="white"
+                                ></circle>
+                                <path
+                                    d="M14.2875 11.5912L22.2578 19.5606L20.9486 20.8698L12.9792 12.9014L12.9792 19.9245L11.1274 19.9245L11.1274 9.73938L21.3125 9.73938L21.3125 11.5912L14.2875 11.5912Z"
+                                    fill="#E94B57"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="ac-panel">
+                    <p class="ac-text">
+                    Um ataque bem-sucedido pode demorar meses. Esse monitoramento procura identificar
+os primeiros passos de um hacker para fazermos a contenção antes que provoque danos mais sérios.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ac card-03">
+                <div class="ac-header">
+                    <button type="button" class="ac-trigger">
+                        <span class="span">AVS – Automatic Vulnerability Scan</span>
+                        <h3 class="section-title" style="--w: 22ch">
+                        Detecção de vulnerabilidades automatizada
+                        </h3>
+                        <div class="svg">
+                            <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="16"
+                                    cy="16"
+                                    r="16"
+                                    transform="rotate(-180 16 16)"
+                                    fill="white"
+                                ></circle>
+                                <path
+                                    d="M14.2875 11.5912L22.2578 19.5606L20.9486 20.8698L12.9792 12.9014L12.9792 19.9245L11.1274 19.9245L11.1274 9.73938L21.3125 9.73938L21.3125 11.5912L14.2875 11.5912Z"
+                                    fill="#E94B57"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="ac-panel">
+                    <p class="ac-text">
+                    Através de feeds de inteligência de ameaças, realizamos buscas automatizadas por vulnerabilidades no seu ambiente, antes que um hacker possa explorá-las.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ac card-04">
+                <div class="ac-header">
+                    <button type="button" class="ac-trigger">
+                        <span class="span">OTI – Omid Threat Intelligence </span>
+                        <h3 class="section-title" style="--w: 20ch">
+                        Rastreamento Web e Deep Web em busca de ameaças
+                        </h3>
+                        <div class="svg">
+                            <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="16"
+                                    cy="16"
+                                    r="16"
+                                    transform="rotate(-180 16 16)"
+                                    fill="white"
+                                ></circle>
+                                <path
+                                    d="M14.2875 11.5912L22.2578 19.5606L20.9486 20.8698L12.9792 12.9014L12.9792 19.9245L11.1274 19.9245L11.1274 9.73938L21.3125 9.73938L21.3125 11.5912L14.2875 11.5912Z"
+                                    fill="#E94B57"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="ac-panel">
+                    <p class="ac-text">
+                    Vasculhamos automaticamente a internet e a dark web em busca de sinais de perigo relacionados à sua empresa.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ac card-05">
+                <div class="ac-header">
+                    <button type="button" class="ac-trigger">
+                        <span class="span">RCT - Regular Cyberattack test</span>
+                        <h3 class="section-title" style="--w: 23ch">
+                        Testes completos de intrusão - PENTEST
+                        </h3>
+                        <div class="svg">
+                            <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="16"
+                                    cy="16"
+                                    r="16"
+                                    transform="rotate(-180 16 16)"
+                                    fill="white"
+                                ></circle>
+                                <path
+                                    d="M14.2875 11.5912L22.2578 19.5606L20.9486 20.8698L12.9792 12.9014L12.9792 19.9245L11.1274 19.9245L11.1274 9.73938L21.3125 9.73938L21.3125 11.5912L14.2875 11.5912Z"
+                                    fill="#E94B57"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="ac-panel">
+                    <p class="ac-text">
+                    Faça testes periódicos de intrusão externos e internos, Black, Gray e White Box para identificar, documentar e relatar possíveis vulnerabilidades na segurança da informação.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ac card-06">
+                <div class="ac-header">
+                    <button type="button" class="ac-trigger">
+                        <span class="span">Full Managed Cybersecurity</span>
+                        <h3 class="section-title" style="--w: 24ch">
+                        A melhor gestão de cibersegurança que sua empresa poderia ter
+
+                        </h3>
+                        <div class="svg">
+                            <svg
+                                width="32"
+                                height="32"
+                                viewBox="0 0 32 32"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <circle
+                                    cx="16"
+                                    cy="16"
+                                    r="16"
+                                    transform="rotate(-180 16 16)"
+                                    fill="white"
+                                ></circle>
+                                <path
+                                    d="M14.2875 11.5912L22.2578 19.5606L20.9486 20.8698L12.9792 12.9014L12.9792 19.9245L11.1274 19.9245L11.1274 9.73938L21.3125 9.73938L21.3125 11.5912L14.2875 11.5912Z"
+                                    fill="#E94B57"
+                                ></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="ac-panel">
+                    <p class="ac-text">
+                    Fazemos a gestão completa da segurança da sua empresa utilizando todas as ferramentas existentes nosso portfólio para que você possa se concentrar no sucesso e crescimento do seu negócio.
+
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="image">
+                <img
+                    src="/images/cyber-security/services-icon.svg"
+                    width="313"
+                    height="470"
+                    aria-hidden="true"
+                    alt=""
+                />
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Services Second -->
+    <section class="services-second spacing">
+        <div class="container services-second__container">
+            <span class="span center">CYBER SECURITY SERVICES</span>
+            <h2 class="section-title center">Serviços consultivos de cibersegurança</h2>
+            <p class="base center">
+                Realizamos análises profundas e específicas de riscos e ameaças, capacitando sua organização a fortalecer sua defesa cibernética e garantir um ambiente de TI seguro e controlado.
+            </p>
+
+            <div class="accordion-container services-second-acc">
+                <div class="ac">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <span class="span" style="--w: 20ch">CGA - Cybersecurity General Assessment</span>
+                            <h3 class="section-title">
+                                Identifique riscos e crie políticas de segurança eficientes
+                            </h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                            Avalie os riscos cibernéticos e aperfeiçoe a segurança com um mapeamento completo
+                            que inclui análise de infraestrutura, entrevistas e revisão de políticas e processos
+                            de segurança de TI.
+                        </p>
+                    </div>
+
+                    <div class="svg">
+                        <svg
+                            width="32"
+                            height="32"
+                            viewBox="0 0 32 32"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="16" cy="16" r="16" transform="rotate(-180 16 16)" fill="white" />
+                            <path
+                                d="M14.2875 11.5912L22.2578 19.5606L20.9486 20.8698L12.9792 12.9014L12.9792 19.9245L11.1274 19.9245L11.1274 9.73938L21.3125 9.73938L21.3125 11.5912L14.2875 11.5912Z"
+                                fill="#E94B57"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands spacing">
+        <div class="container brands__container">
+            <h2 class="section-title center">Clientes que confiam em nós</h2>
+            <div>
+                <img
+                    src="/images/cyber-security/brands-02.png"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    alt=""
+                />
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Banner Second -->
+    <section class="banner-second spacing">
+        <div class="container banner-second__container">
+            <h2 class="section-title center">
+                Comece a usar a melhor <strong>security cloud provider</strong> do mercado
+            </h2>
+            <p class="base">
+            Monte você mesmo seu datacenter virtual na Omid Cloud - e se precisar de ajuda, estaremos aqui para te atender!
+            </p>
+            <p class="base">Crie sua conta e veja como é fácil.</p>
+
+			<a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary arrow" style="margin: 2rem auto 0 auto;">
+				<span>Escolha a melhor solução</span>
+			</a>
+        </div>
+    </section>
+</main>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+<script>
+    var rellax = new Rellax(".rellax")
+</script>
+<link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+<script>
+    const servicesFirstAcc = new Accordion(".services-first-acc")
+    servicesFirstAcc.open(0)
+
+    const servicesSecondAcc = new Accordion(".services-second-acc")
+    servicesSecondAcc.open(0)
+</script>
+
+<style>
+    * {
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    .form-wrapper {
+      background-color: #141414;
+      display: grid;
+      gap: 2rem;
+      position: fixed;
+      width: 94%;
+      max-width: 62.5rem;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999999999;
+      color: #ffffff;
+      max-height: 90vh;
+      overflow-y: auto;
+
+      display: none;
+    }
+
+    .overlay {
+      position: fixed;
+      z-index: 99999;
+      background-color: rgba(0, 0, 0, 0.575);
+      inset: 0;
+      display: none;
+    }
+
+    .form-wrapper.active {
+      display: grid;
+    }
+
+    .form-wrapper::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      flex-shrink: 0;
+      border-radius: 173px;
+      background: #73ba69;
+      filter: blur(288.0789794921875px);
+      position: absolute;
+      left: 0;
+      top: 30%;
+    }
+
+    .form-wrapper .rd-section {
+      background-color: #050505 !important;
+      padding: 1rem !important;
+    }
+
+    .form-wrapper .content {
+      padding: 2rem;
+    }
+
+    .form-wrapper img {
+      height: auto;
+    }
+
+    .form-wrapper h2 {
+      margin-bottom: 1.75rem;
+    }
+
+    .form-wrapper p {
+      margin-bottom: 3rem;
+
+    }
+
+    @media (min-width: 45em) {
+      .form-wrapper {
+        grid-template-columns: 1.25fr 1fr;
+        align-items: start;
+      }
+
+      .form-wrapper .rd-section {
+        padding: 2rem !important;
+      }
+    }
+
+    .form-close {
+      color: #fff;
+      font-size: 2rem;
+      display: grid;
+      aspect-ratio: 1;
+      padding: .25rem;
+      line-height: 1;
+      position: absolute;
+      right: .5rem;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <button data-open-form>Abrir</button>
+
+  <!-- RD -->
+  <div class="overlay"></div>
+  <div id="form" class="form-wrapper">
+    <div class="content">
+      <h2 class="section-title"><span>Conquiste números</span> que fazem toda a diferença</h2>
+      <p>de 20% a 40% de redução em custos, com maior performance para nossos clientes.</p>
+      <img
+           src="/images/logos.png"
+           alt="" />
+    </div>
+    <div>
+      <button class="form-close">&times</button>
+      <div role="main" id="site_hr-8ff192651f00b8fa8775"></div>
+      <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+      <script type="text/javascript">
+        new RDStationForms("site_hr-8ff192651f00b8fa8775", "").createForm();
+      </script>
+    </div>
+  </div>
+
+  <!-- Footer -->
+      <footer class="footer">
+          <div class="container footer__container">
+              <div class="logo">
+                  <img
+                      src="/images/logo-white-vertical.svg"
+                      width="133"
+                      height="143"
+                      decoding="async"
+                      loading="lazy"
+                      alt="Omid Solutions"
+                  />
+              </div>
+
+              <div class="social">
+                  <a href="https://www.instagram.com/omidsolutions/" target="_blank" aria-label="Instagram">
+                      <img
+                          src="/images/footer-social-instagram.svg"
+                          width="36"
+                          height="36"
+                          loading="lazy"
+                          decoding="async"
+                          alt=""
+                          aria-hidden="true"
+                      />
+                  </a>
+
+                  <a href="https://www.facebook.com/OMIDSolutions" target="_blank" aria-label="Facebook">
+                      <img
+                          src="/images/footer-social-facebook.svg"
+                          width="36"
+                          height="36"
+                          loading="lazy"
+                          decoding="async"
+                          alt=""
+                          aria-hidden="true"
+                      />
+                  </a>
+
+                  <a href="https://www.linkedin.com/company/omidsolutions/" target="_blank" aria-label="Linkedin">
+                      <img
+                          src="/images/footer-social-linkedin.svg"
+                          width="36"
+                          height="36"
+                          loading="lazy"
+                          decoding="async"
+                          alt=""
+                          aria-hidden="true"
+                      />
+                  </a>
+              </div>
+
+              <div class="infos">
+                  <div>
+                      <h6>Omid Barueri</h6>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                      fill="white"
+                                  />
+                              </svg>
+                          </span>
+                          SAC/NOC (24x7): <a href="tel:08008781250">0800 878 1250</a>
+                      </p>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M7.89765 1.60025C9.45555 1.57458 10.9693 2.11833 12.1547 3.12946C13.3402 4.14059 14.1159 5.54958 14.3363 7.09202C14.5567 8.63446 14.2066 10.2043 13.3517 11.507C12.4969 12.8096 11.196 13.7555 9.69324 14.1672C8.19049 14.5788 6.58918 14.4279 5.1898 13.7427C5.0373 13.668 4.865 13.6439 4.69784 13.6736L2.12694 14.1318L2.85272 12.4603C2.9638 12.2045 2.93357 11.9093 2.77295 11.6813C1.87564 10.4075 1.47402 8.85004 1.64347 7.30117C1.81291 5.75231 2.54178 4.31852 3.69328 3.26889C4.84478 2.21925 6.33976 1.62592 7.89765 1.60025ZM13.1926 1.91259C11.7108 0.648685 9.81867 -0.0310027 7.8713 0.00108648C5.92393 0.0331756 4.05521 0.774835 2.61584 2.08688C1.17646 3.39892 0.265378 5.19116 0.0535681 7.12724C-0.141622 8.91141 0.269398 10.7047 1.2129 12.2212L0.0661731 14.8622C-0.0511764 15.1324 -0.0104107 15.4453 0.172268 15.6765C0.354947 15.9076 0.649942 16.0196 0.940009 15.9679L4.72864 15.2927C6.41899 16.0514 8.32347 16.2007 10.1158 15.7097C11.9942 15.1952 13.6203 14.0128 14.6889 12.3845C15.7575 10.7562 16.1951 8.79384 15.9196 6.86579C15.6441 4.93774 14.6745 3.1765 13.1926 1.91259ZM5.9977 4.38464C5.67957 4.38464 5.37446 4.51102 5.1495 4.73598C4.92454 4.96093 4.79816 5.26604 4.79816 5.58418V6.38387C4.79816 7.65642 5.30368 8.87685 6.20351 9.77668C7.10334 10.6765 8.32377 11.182 9.59632 11.182H10.396C10.7141 11.182 11.0193 11.0556 11.2442 10.8307C11.4692 10.6057 11.5955 10.3006 11.5955 9.98248C11.5955 9.66435 11.4692 9.35924 11.2442 9.13428C11.0193 8.90932 10.7141 8.78295 10.396 8.78295H9.59632C9.27818 8.78295 8.97307 8.90932 8.74812 9.13428C8.66722 9.21517 8.59908 9.30643 8.54497 9.40493C8.0936 9.24784 7.67881 8.9901 7.33445 8.64574C6.99008 8.30138 6.73235 7.88658 6.57526 7.43522C6.67376 7.38111 6.76501 7.31296 6.8459 7.23207C7.07086 7.00711 7.19724 6.702 7.19724 6.38387V5.58418C7.19724 5.26604 7.07086 4.96093 6.8459 4.73598C6.62095 4.51102 6.31584 4.38464 5.9977 4.38464Z"
+                                      fill="white"
+                                  />
+                              </svg>
+                          </span>
+                          <a href="https://wa.me/5511999562354" target="_blank">+55 11 99956-2354 (WhatsApp)</a>
+                      </p>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          >Comercial/Financeiro: <a href="tel:551144104300">+55 11 4410-4300</a>
+                      </p>
+
+                      <div>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="19"
+                                  viewBox="0 0 16 19"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M4.54315 2.82639C5.56639 2.1427 6.76938 1.77778 8 1.77778C9.23063 1.77778 10.4336 2.1427 11.4568 2.82639C12.4801 3.51008 13.2776 4.48184 13.7486 5.61878C14.2195 6.75573 14.3427 8.00679 14.1027 9.21377C13.8626 10.4207 13.27 11.5295 12.3999 12.3997L8.62867 16.1709C8.46199 16.3374 8.23604 16.4309 8.00044 16.4309C7.76485 16.4309 7.5389 16.3374 7.37222 16.1709L3.60002 12.3996C2.72991 11.5294 2.13737 10.4207 1.89732 9.21377C1.65726 8.00679 1.7805 6.75573 2.25145 5.61878C2.7224 4.48184 3.51992 3.51008 4.54315 2.82639ZM8 0C6.41777 0 4.87107 0.469181 3.55548 1.34821C2.2399 2.22725 1.21452 3.47665 0.609007 4.93844C0.00349362 6.40022 -0.154957 8.00873 0.153691 9.56057C0.462339 11.1124 1.22431 12.538 2.34309 13.6568L6.11578 17.4286C6.6158 17.9281 7.29367 18.2087 8.00044 18.2087C8.70722 18.2087 9.38541 17.9278 9.88543 17.4283L13.657 13.6567C14.7758 12.5379 15.5377 11.1124 15.8463 9.56057C16.155 8.00873 15.9965 6.40022 15.391 4.93844C14.7855 3.47665 13.7601 2.22725 12.4445 1.34821C11.1289 0.469181 9.58223 0 8 0ZM7.99999 4.44393C7.057 4.44393 6.15263 4.81854 5.48583 5.48533C4.81904 6.15213 4.44444 7.0565 4.44444 7.99949C4.44444 8.94248 4.81904 9.84685 5.48583 10.5136C6.15263 11.1804 7.057 11.555 7.99999 11.555C8.94298 11.555 9.84735 11.1804 10.5141 10.5136C11.1809 9.84685 11.5555 8.94248 11.5555 7.99949C11.5555 7.0565 11.1809 6.15213 10.5141 5.48533C9.84735 4.81854 8.94298 4.44393 7.99999 4.44393ZM6.74291 6.74241C7.07631 6.40901 7.52849 6.22171 7.99999 6.22171C8.47149 6.22171 8.92367 6.40901 9.25707 6.74241C9.59047 7.07581 9.77777 7.52799 9.77777 7.99949C9.77777 8.47098 9.59047 8.92317 9.25707 9.25657C8.92367 9.58996 8.47149 9.77726 7.99999 9.77726C7.52849 9.77726 7.07631 9.58996 6.74291 9.25657C6.40951 8.92317 6.22221 8.47098 6.22221 7.99949C6.22221 7.52799 6.40951 7.07581 6.74291 6.74241Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          ><a
+                              href="https://www.google.com.br/maps/@-23.4923308,-46.8357696,3a,84.5y,208.84h,95.16t/data=!3m7!1e1!3m5!1s5CV4jXYjhsNAnaN69FaD0g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D5CV4jXYjhsNAnaN69FaD0g%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D193.8300696947755%26pitch%3D13.239087341675287%26thumbfov%3D90!7i16384!8i8192?coh=205409&entry=ttu"
+                              target="_blank"
+                              >Av. Aruanã, 452, Tamboré - Barueri - SP</a
+                          >
+                      </p>
+                      <p>CEP: 06460-010</p>
+                  </div>
+                  </div>
+
+                  <div>
+                      <h6>Omid Rio de Janeiro</h6>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          >Comercial/Financeiro: <a href="tel:552139009832">+55 21 3900-9832</a>
+                      </p>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="19"
+                                  viewBox="0 0 16 19"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M4.54315 2.82639C5.56639 2.1427 6.76938 1.77778 8 1.77778C9.23063 1.77778 10.4336 2.1427 11.4568 2.82639C12.4801 3.51008 13.2776 4.48184 13.7486 5.61878C14.2195 6.75573 14.3427 8.00679 14.1027 9.21377C13.8626 10.4207 13.27 11.5295 12.3999 12.3997L8.62867 16.1709C8.46199 16.3374 8.23604 16.4309 8.00044 16.4309C7.76485 16.4309 7.5389 16.3374 7.37222 16.1709L3.60002 12.3996C2.72991 11.5294 2.13737 10.4207 1.89732 9.21377C1.65726 8.00679 1.7805 6.75573 2.25145 5.61878C2.7224 4.48184 3.51992 3.51008 4.54315 2.82639ZM8 0C6.41777 0 4.87107 0.469181 3.55548 1.34821C2.2399 2.22725 1.21452 3.47665 0.609007 4.93844C0.00349362 6.40022 -0.154957 8.00873 0.153691 9.56057C0.462339 11.1124 1.22431 12.538 2.34309 13.6568L6.11578 17.4286C6.6158 17.9281 7.29367 18.2087 8.00044 18.2087C8.70722 18.2087 9.38541 17.9278 9.88543 17.4283L13.657 13.6567C14.7758 12.5379 15.5377 11.1124 15.8463 9.56057C16.155 8.00873 15.9965 6.40022 15.391 4.93844C14.7855 3.47665 13.7601 2.22725 12.4445 1.34821C11.1289 0.469181 9.58223 0 8 0ZM7.99999 4.44393C7.057 4.44393 6.15263 4.81854 5.48583 5.48533C4.81904 6.15213 4.44444 7.0565 4.44444 7.99949C4.44444 8.94248 4.81904 9.84685 5.48583 10.5136C6.15263 11.1804 7.057 11.555 7.99999 11.555C8.94298 11.555 9.84735 11.1804 10.5141 10.5136C11.1809 9.84685 11.5555 8.94248 11.5555 7.99949C11.5555 7.0565 11.1809 6.15213 10.5141 5.48533C9.84735 4.81854 8.94298 4.44393 7.99999 4.44393ZM6.74291 6.74241C7.07631 6.40901 7.52849 6.22171 7.99999 6.22171C8.47149 6.22171 8.92367 6.40901 9.25707 6.74241C9.59047 7.07581 9.77777 7.52799 9.77777 7.99949C9.77777 8.47098 9.59047 8.92317 9.25707 9.25657C8.92367 9.58996 8.47149 9.77726 7.99999 9.77726C7.52849 9.77726 7.07631 9.58996 6.74291 9.25657C6.40951 8.92317 6.22221 8.47098 6.22221 7.99949C6.22221 7.52799 6.40951 7.07581 6.74291 6.74241Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          ><a
+                              href="https://www.google.com.br/maps/place/Estr.+dos+Bandeirantes,+7431+-+Jacarepagu%C3%A1,+Rio+de+Janeiro+-+RJ,+22780-081/@-22.9659834,-43.4131492,17z/data=!3m1!4b1!4m6!3m5!1s0x9bdc06b48fe2c3:0xae21ae5620a645ab!8m2!3d-22.9659884!4d-43.4105743!16s%2Fg%2F11rkl5hyps?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+                              target="_blank"
+                              >Estr. dos Bandeirantes, 7431 - Jacarepaguá, Rio de Janeiro - RJ, 22780-081</a
+                          >
+                      </p>
+                  </div>
+
+                  
+              </div>
+
+              <div class="menu">
+                  <a href="/sobre">Sobre</a>
+                  <a href="/solucoes/omid-cloud">Omid Cloud</a>
+                  <a href="/solucoes/data-center">Data Centers</a>
+                  <a href="/solucoes/cyber-security">Cibersegurança</a>
+                  <a href="/solucoes/it-services">Soluções de TI</a>
+                  <a href="/blog">Blog</a>
+                  <a href="/carreiras">Trabalhe Conosco</a>
+                  <a href="/integridade-e-compliance">Integridade e Compliance</a>
+                  <a href="#" data-open-form>Contato</a>
+                  <a href="/wp-content/uploads/2024/10/POLT-006-Politica-de-Protecao-de-Dados-V1.1.1.pdf" target="_blank">Política de Proteção de Dados</a>
+                  <a href="/wp-content/uploads/2024/10/POLT-005-Politica-de-Privacidade-V1.1.1.pdf" target="_blank">Política de Privacidade</a>
+                  <a href="/wp-content/uploads/2025/01/POLT-007-Politica-da-Qualidade-V1.1.1.pdf" target="_blank">Política da Qualidade</a>
+              </div>
+
+              <div class="copy">
+                  <p>&copy; 2024 Omid Solutions. Todos os Direitos Reservados.</p>
+              </div>
+          </div>
+      </footer>
+
+      <script>
+          let isFormOpen = false;
+
+          const formWrapper = document.querySelector(".form-wrapper");
+          const buttonsOpenForm = Array.from(document.querySelectorAll("[data-open-form]"));
+          const overlay = document.querySelector(".overlay");
+          const buttonCloseForm = document.querySelector('.form-close')
+
+          function closeForm() {
+              isFormOpen = false;
+              formWrapper.classList.remove("active");
+              overlay.style.display = "none";
+          }
+
+          buttonsOpenForm.forEach((button) => {
+              button.addEventListener("click", (e) => {
+              if (isFormOpen) return;
+              if (!formWrapper) return;
+
+              isFormOpen = true;
+              overlay.style.display = "block";
+              formWrapper.classList.add("active");
+              });
+          });
+
+          if (formWrapper) {
+              overlay.addEventListener("click", (e) => {
+                  closeForm()
+              });
+          }
+
+          if(buttonCloseForm) {
+              buttonCloseForm.addEventListener('click', e => {
+                  closeForm()
+              })
+          }
+      </script>
+
+      <!-- JS -->
+      <script src="/js/global.js"></script>
+      <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/a0cf7067-8c96-4c07-86df-bc2b133f7895-loader.js" ></script>
+
+      <script>
+      // get the "contact" param from url and open contact form
+      document.addEventListener("DOMContentLoaded", () => {
+          const queryString = window.location.search
+          const urlParams = new URLSearchParams(queryString)
+
+          const isContact = urlParams.get("contact")
+
+          if (isContact) {
+          const buttonOpenForm = document.querySelector("[data-open-form]")
+
+          if (!buttonOpenForm) return
+
+          buttonOpenForm.click()
+          }
+      })
+      </script>
+
+
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWG8FCMC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+     
+  </body>
+</html>

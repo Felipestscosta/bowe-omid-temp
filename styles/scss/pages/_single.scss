@@ -1,0 +1,125 @@
+.page-single {
+  .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.single-post {
+  .post-header {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+
+    .content {
+      display: grid;
+      gap: 1rem;
+
+      .category {
+        color: #fbbc43;
+        font-size: clamp(1.125rem, 3.5vw, 1.25rem);
+        font-weight: 500;
+        line-height: 120%;
+        text-transform: uppercase;
+      }
+
+      .title {
+        font-weight: 500;
+        line-height: 120%;
+        font-size: clamp(2rem, 3.5vw, 2.75rem);
+      }
+
+      .description {
+        font-size: 1rem;
+        line-height: 120%;
+        font-weight: 400;
+        margin-top: 0.75rem;
+      }
+    }
+
+    .image {
+      overflow: hidden;
+      border-radius: 1rem;
+      max-height: 26.125rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    @media (min-width: 45em) {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 2.25rem;
+
+      margin-bottom: 5rem;
+    }
+
+    @media (min-width: 70em) {
+      gap: 5rem;
+      margin-bottom: 7rem;
+    }
+  }
+
+  .widget-compartilhar{
+    padding-top: 2rem;
+    p{
+      color: #2d9bbc;
+      padding-bottom: 1rem;
+    }
+    a {
+      text-decoration: none!important;
+    }
+    i {
+      font-size: 25px;
+      padding-right: 9px;
+    }
+  }
+  .metas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .widget-compartilhar {
+      padding-top: 0;
+      text-align: right;
+    }
+  }
+
+  .post-date {
+    color: #2d9bbc;
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 3.125rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .post-content {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-block: 1.125rem;
+      line-height: 120%;
+    }
+
+    p + p {
+      font-weight: 400;
+      margin-top: 1.25rem;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}

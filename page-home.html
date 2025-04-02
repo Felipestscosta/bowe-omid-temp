@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+        <!-- Google Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" /> -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+		<link rel="stylesheet" href="./styles/css/style.css" />
+
+
+        <!-- @TODO move to template -->
+        <!-- SEO -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PWG8FCMC');</script>
+
+		<?php wp_head(); ?>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" aria-label="Omid Solutions">
+                    <img src="/images/logo-white-horizontal.svg" width="208" height="69" aria-hidden="true" />
+                </a>
+
+                <nav class="menu" data-header-menu>
+                    <ul class="list">
+                        <a href="/sobre">Sobre</a>
+                        <div class="group">
+                            <a href="#" class="has-sublist" data-has-sublist>Produtos</a>
+                            <ul class="sublist" data-sublist>
+                                <a href="/solucoes/omid-cloud">Omid Cloud</a>
+                                <a href="/solucoes/data-center">Data Centers</a>
+                                <a href="/solucoes/cyber-security">Cibersegurança</a>
+                                <a href="/solucoes/it-services">Soluções de TI</a>
+                            </ul>
+                        </div>
+                        <a href="/blog">Blog</a>
+                        <a href="/integridade-e-compliance">Integridade e Compliance</a>
+
+                        <div class="group">
+                            <a href="#" class="has-sublist" data-has-sublist>Configurador</a>
+                            <ul class="sublist" data-sublist>
+                                <a href="https://app.omidsolutions.com/login" target="_blank">Configurar agora</a>
+                            </ul>
+                        </div>
+                    </ul>
+
+                    <button data-open-form href="#" class="button-primary">Contato</button>
+                </nav>
+
+                <button class="hamburger" data-header-openner aria-label="abrir menu">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+<!-- Main -->
+<main class="page-home">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__container">
+      <div class="content">
+        <h1 class="section-title">
+          <span>Cloud computing </span>flexível, segura e com previsibilidade de
+          custos
+        </h1>
+        <p>
+          Simplifique a sua jornada para a nuvem com as soluções da Omid Cloud e comece a economizar hoje.
+        </p>
+        <div class="buttons">
+          <a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary arrow" style="text-transform: uppercase;"><span>Contratar agora</span></a>
+
+          <a
+            data-open-form
+            href="#"
+            class="button-secondary arrow"
+            style="--bg: #000000; --color: #ffffff; text-transform: uppercase;"><span>Fale com nossos especialistas</span></a>
+        </div>
+      </div>
+
+      <div class="image">
+        <!-- <img src="/images/home/hero-img.png" width="636" height="678" alt="" /> -->
+        <video autoplay muted loop id="vid">
+          <source src="/images/home/hero-video.mp4" />
+        </video>
+        <script>
+          document.getElementById("vid").play()
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- Companies -->
+  <section class="companies">
+    <div class="container">
+      <h2 class="section-title center">Empresas que confiam em nós</h2>
+
+      <div class="swiper companies-swiper-01">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-01.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-02.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-03.png" loading="lazy" decoding="async" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-04.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-05.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-06.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-07.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-08.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-09.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-10.png" loading="lazy" decoding="async" alt="" />
+          </div>
+
+          <div class="swiper-slide">
+            <img src="/images/home/home-companies-11.png" loading="lazy" decoding="async" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strategies -->
+  <section class="strategies spacing">
+    <div class="container strategies__container">
+      <div class="content">
+        <h2 class="section-title">
+          Por que reunir suas estratégias híbridas na <span>Omid Cloud</span>
+        </h2>
+        <p>
+          Além de garantir alto desempenho, disponibilidade e arquitetura multicloud, contamos com Data Centers próprios, o que possibilita a contratação de uma arquitetura híbrida as-a-service completa.
+        </p>
+        <p>
+          Tudo no mesmo contrato e feito de forma ágil, fácil, flexível e transparente, com gestão e controle absoluto dos seus recursos e investimentos.
+        </p>
+      </div>
+
+      <div class="image">
+        <img
+          src="/images/home/why-img.png"
+          width="629"
+          height="417"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+          alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="benefits spacing">
+    <div class="container benefits__container" id="benefits--cards">
+      <article class="card benefits--card">
+        <div class="image">
+          <img
+            src="/images/home/home-cards-icon-01.svg"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+            alt="Icone"
+            width="40"
+            height="40" />
+        </div>
+        <div>
+          <h3>Opere de forma simples e transparente</h3>
+          <p>
+            Contrate, configure e gerencie seus recursos de cloud diretamente no portal de compras da Omid. Tudo automatizado e com a possibilidade de contratar pool de recursos para uso livre, sem limite de quantidade de máquinas virtuais.
+          </p>
+        </div>
+      </article>
+
+      <article class="card benefits--card">
+        <div class="image">
+          <img
+            src="/images/home/home-cards-icon-02.svg"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+            alt="Icone"
+            width="40"
+            height="40" />
+        </div>
+        <div>
+          <h3>Invista com previsibilidade</h3>
+          <p>
+            Sem cobranças surpresas no final do mês. Recursos de cloud disponíveis com valor fixo mensal, sem variação cambial, cobranças extras ou tarifação por dados trafegados.
+          </p>
+        </div>
+      </article>
+
+      <article class="card benefits--card">
+        <div class="image">
+          <img
+            src="/images/home/home-cards-icon-03.svg"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+            alt="Icone"
+            width="40"
+            height="40" />
+        </div>
+        <div>
+          <h3>Inove com suporte especializado e individualizado</h3>
+          <p>
+            Você terá com quem falar! Equipes técnicas experientes e disponíveis para resolver problemas e eventuais dúvidas operacionais – todos os dias e a qualquer hora, incluindo um 0800 à sua disposição.
+          </p>
+        </div>
+      </article>
+
+      <article class="card benefits--card">
+        <div class="image">
+          <img
+            src="/images/home/home-cards-icon-04.svg"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+            alt="Icone"
+            width="40"
+            height="40" />
+        </div>
+        <div>
+          <h3>
+            Seja disponível e resiliente com uma infraestrutura de alto padrão
+          </h3>
+          <p>
+            Alta disponibilidade, eficiência, segurança e resiliência através de
+            Data Centers proprietários de padrão internacional Tier III.
+          </p>
+        </div>
+      </article>
+
+      <article class="card benefits--card">
+        <div class="image">
+          <img
+            src="/images/home/home-cards-icon-05.svg"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+            alt="Icone"
+            width="40"
+            height="40" />
+        </div>
+        <div>
+          <h3>Tenha alta performance com reserva inteligente de recursos</h3>
+          <p>
+            Diferente das demais cloud públicas, na Omid Cloud os recursos contratados ficam sempre dedicados e disponíveis 100% do tempo (sem compartilhamento), garantindo alta performance e segurança para a sua operação crítica.
+          </p>
+        </div>
+      </article>
+
+      <article class="card benefits--card">
+        <div class="image">
+          <img
+            src="/images/home/home-cards-icon-06.svg"
+            loading="lazy"
+            decoding="async"
+            aria-hidden="true"
+            alt="Icone"
+            width="40"
+            height="40" />
+        </div>
+        <div>
+          <h3>Fique livre sem lock in</h3>
+          <p>
+            Mantemos nossos clientes pela qualidade do serviço, e não pela impossibilidade de migração. A nossa arquitetura de produtos oferece total autonomia para migração de workloads.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products spacing" id="produtos">
+    <div class="container products__container">
+      <h2 class="section-title center"><span>Confira nossos produtos</span></h2>
+
+      <div class="outer" style="--color: #fbbc43; --shadow: #fbbc434d">
+        <div class="box">
+          <h3>Omid Cloud</h3>
+          <p>
+            Novo padrão de serviço em nuvem que une performance superior ao mercado, resiliência, escalabilidade e flexibilidade na gestão dos recursos, seja de um único host ou de um pool de recursos em um Data Center Virtual VMware. Tudo em ambientes totalmente Software Defined e baseados em tecnologia hiperconvergente de ponta.
+          </p>
+          <a href="/solucoes/omid-cloud#ComputeCloudHyperLink">Omid Compute Cloud </a> |
+          <a href="/solucoes/omid-cloud#VMwareCloudHyperLink"> Omid VMware Cloud </a>
+        </div>
+
+
+
+        <div class="swiper product-01-swiper" data-product="01">
+          <div class="swiper-wrapper">
+
+            <article class="swiper-slide">
+              <h4>Cloud Backup & Data Protection</h4>
+              <p>
+                Experiência completa de proteção para seus dados, incluindo soluções de disaster recovery, backup em nuvem, repositório para backup off-site e archiving.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Cloud Storage</h4>
+              <p>Mais fôlego – e espaço – para os servidores da sua empresa, incluindo um S3 de alta performance.</p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Container as a Service</h4>
+              <p>DevOps e DevSecOps flexível, escalável e portável. Ideal para seu negócio.</p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>VMware Extended</h4>
+              <p>
+                Gestão integrada de toda a sua infraestrutura VMware – on e off premise – em uma única interface.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Virtual Desktop
+              </h4>
+              <p>Virtualize, customize e compartilhe
+                a área de trabalho das equipes
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Virtual Application</h4>
+              <p>Aplicações virtualizadas: mais controle e acesso com menos custo.</p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Web Drive & Collaboration</h4>
+              <p>Colabore e estimule a interação entre equipes do negócio por meio do compartilhamento de arquivos, agendamento de tarefas, videoconferências e chat.</p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Cloud Disaster Recovery</h4>
+              <p>Recuperação rápida de dados e sistemas via infraestrutura em nuvem, com alta disponibilidade, escalabilidade e menor custo, garantindo operações ágeis após desastres.</p>
+              <div class="buttons">
+                <a href="/solucoes/omid-cloud/" class="filled arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+
+          </div>
+        </div>
+
+        <div class="navigation">
+          <div class="product-01-button-prev">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.6192 0.374375C12.1116 -0.124629 11.2884 -0.124629 10.7808 0.374375L0.380762 10.5966C-0.126921 11.0956 -0.126921 11.9046 0.380762 12.4036L10.7808 22.6259C11.2884 23.1249 12.1116 23.1249 12.6192 22.6259C13.1269 22.1269 13.1269 21.3178 12.6192 20.8188L3.13848 11.5001L12.6192 2.18143C13.1269 1.68242 13.1269 0.873378 12.6192 0.374375Z"
+                fill="#616161" />
+            </svg>
+          </div>
+          <div class="product-01-pagination"></div>
+          <div class="product-01-button-next">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.380761 22.626C0.888443 23.125 1.71156 23.125 2.21924 22.626L12.6192 12.4038C13.1269 11.9048 13.1269 11.0957 12.6192 10.5967L2.21924 0.374495C1.71156 -0.124508 0.888447 -0.124508 0.380765 0.374495C-0.126917 0.873501 -0.126917 1.68254 0.380765 2.18155L9.86152 11.5002L0.380762 20.8189C-0.12692 21.3179 -0.12692 22.127 0.380761 22.626Z"
+                fill="#616161" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="outer decoration-left"
+        style="--color: #73ba69; --shadow: rgba(115, 186, 105, 0.3)">
+        <div class="box">
+          <h3>Data Centers</h3>
+          <p>
+            Conecte sua infraestrutura globalmente com soluções de Colocation e Hosting nos Data Centers próprios de alto padrão da Omid. Garanta que seus sistemas e aplicações estejam sempre seguros e disponíveis em ambientes certificados Tier III.
+          </p>
+        </div>
+
+        <div class="swiper product-02-swiper" data-product="02">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide">
+              <h4>Colocation especializado</h4>
+              <p>
+                Alta conectividade, flexibilidade de customização sem igual em uma infraestrutura de padrão global, com opção exclusiva de colocation em Sala Cofre certificada pela norma ABNT NBR 15.247.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/data-center" class="filled black arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>PSS Omid</h4>
+              <p>
+                Serviços de suporte de infraestrutura credenciados pelo Instituto de Tecnologia da Informação (ITI) para Autoridades Certificadoras ICP-Brasil com disponibilidade de migração imediata.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/data-center" class="filled black arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Hosting</h4>
+              <p>
+                Infraestrutura de TIC e facilities dedicada e customizada para
+                atender exclusivamente a sua empresa.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/data-center" class="filled black arrow-black">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <div class="product-02-button-prev">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.6192 0.374375C12.1116 -0.124629 11.2884 -0.124629 10.7808 0.374375L0.380762 10.5966C-0.126921 11.0956 -0.126921 11.9046 0.380762 12.4036L10.7808 22.6259C11.2884 23.1249 12.1116 23.1249 12.6192 22.6259C13.1269 22.1269 13.1269 21.3178 12.6192 20.8188L3.13848 11.5001L12.6192 2.18143C13.1269 1.68242 13.1269 0.873378 12.6192 0.374375Z"
+                fill="#616161" />
+            </svg>
+          </div>
+          <div class="product-02-pagination"></div>
+          <div class="product-02-button-next">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.380761 22.626C0.888443 23.125 1.71156 23.125 2.21924 22.626L12.6192 12.4038C13.1269 11.9048 13.1269 11.0957 12.6192 10.5967L2.21924 0.374495C1.71156 -0.124508 0.888447 -0.124508 0.380765 0.374495C-0.126917 0.873501 -0.126917 1.68254 0.380765 2.18155L9.86152 11.5002L0.380762 20.8189C-0.12692 21.3179 -0.12692 22.127 0.380761 22.626Z"
+                fill="#616161" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="outer"
+        style="--color: #2d9bbc; --shadow: rgba(45, 155, 188, 0.3)">
+        <div class="box">
+          <h3>IT Services</h3>
+          <p>
+            Trabalhe com nosso time de especialistas para viabilizar desde a
+            migração física ou virtual dos dados até o monitoramento e a
+            segurança de suas soluções digitais.
+          </p>
+        </div>
+
+        <div class="swiper product-03-swiper" data-product="03">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide">
+              <h4>Management Services</h4>
+              <p>
+                Gestão integral da infraestrutura de processamento da sua
+                empresa.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/it-services" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Data Migration</h4>
+              <p>
+                A migração segura dos dados da empresa para a sua nova casa.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/it-services" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Smart Hands</h4>
+              <p>
+                A mão na roda – e na massa – a serviço do cliente dentro do Data
+                Center.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/it-services" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>NOC 24X07X365</h4>
+              <p>
+                Central de monitoramento contínuo de redes e infraestrutura, garantindo detecção rápida de problemas e operação ininterrupta com resposta imediata a incidentes.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/it-services" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <div class="product-03-button-prev">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.6192 0.374375C12.1116 -0.124629 11.2884 -0.124629 10.7808 0.374375L0.380762 10.5966C-0.126921 11.0956 -0.126921 11.9046 0.380762 12.4036L10.7808 22.6259C11.2884 23.1249 12.1116 23.1249 12.6192 22.6259C13.1269 22.1269 13.1269 21.3178 12.6192 20.8188L3.13848 11.5001L12.6192 2.18143C13.1269 1.68242 13.1269 0.873378 12.6192 0.374375Z"
+                fill="#616161" />
+            </svg>
+          </div>
+          <div class="product-03-pagination"></div>
+          <div class="product-03-button-next">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.380761 22.626C0.888443 23.125 1.71156 23.125 2.21924 22.626L12.6192 12.4038C13.1269 11.9048 13.1269 11.0957 12.6192 10.5967L2.21924 0.374495C1.71156 -0.124508 0.888447 -0.124508 0.380765 0.374495C-0.126917 0.873501 -0.126917 1.68254 0.380765 2.18155L9.86152 11.5002L0.380762 20.8189C-0.12692 21.3179 -0.12692 22.127 0.380761 22.626Z"
+                fill="#616161" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="outer decoration-left"
+        style="--color: #e94b57; --shadow: rgba(233, 75, 87, 0.3)">
+        <div class="box">
+          <h3>Cyber Security Services</h3>
+          <p>
+            Afaste ameaças com um aliado especializado na criação e ativação de sistemas sofisticados de segurança cibernética. Conheça o amplo portfólio do <strong style="color: #e94b57; font-weight: 400">Centro de Defesa Cibernética da Omid</strong>
+          </p>
+        </div>
+
+        <!-- Retirada de informações portfólio cybersecurity -->
+        <div class="swiper product-04-swiper" data-product="04">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide">
+              <h4>Security Incident Monitoring</h4>
+              <p>
+                Monitoramento constante dos servidores e dispositivos – dia e noite, todos os dias do ano – para detectar e bloquear ataques cibernéticos através de SOC próprio.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/cyber-security" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Automatic Vulnerability Scan</h4>
+              <p>
+                Busca automática de vulnerabilidades no ambiente cibernético, com classificação, priorização e correção gerenciada pela equipe, integrada ao Security Incident Monitoring.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/cyber-security" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>OTI – Omid Threat Intelligence</h4>
+              <p>
+                Vigilância estratégica da web e darkweb para prevenir ataques
+                contra a segurança dos dados da sua empresa.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/cyber-security" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Continuous Cyberattack test</h4>
+              <p>
+                Teste contínuo de intrusão (pentest) para identificar e mitigar vulnerabilidades na infraestrutura e aplicações web, com opções de periodicidade de 6 ou 12 meses, reforçando a segurança dos seus sistemas.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/cyber-security" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Omid Safe Restore</h4>
+              <p>
+                Backup de segunda instância para restaurar dados após ataques cibernéticos, com criptografia, armazenamento offline e recuperação imediata.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/cyber-security" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>CGA - Cybersecurity General Assessment</h4>
+              <p>
+                Elaboração de Política de Segurança Cibernética, Resposta a
+                Incidentes e planos para fortalecer a segurança corporativa.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/cyber-security" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+
+            <article class="swiper-slide">
+              <h4>Full Managed Cybersecurity</h4>
+              <p>
+                Gestão completa da segurança cibernética da sua empresa, utilizando todas as ferramentas Omid para proteger suas informações e focar no crescimento do seu negócio.
+              </p>
+              <div class="buttons">
+                <a href="/solucoes/cyber-security" class="filled">Saiba mais</a>
+                <a href="https://app.omidsolutions.com/login" target="_blank" class="outlined">Comece já</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <div class="product-04-button-prev">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.6192 0.374375C12.1116 -0.124629 11.2884 -0.124629 10.7808 0.374375L0.380762 10.5966C-0.126921 11.0956 -0.126921 11.9046 0.380762 12.4036L10.7808 22.6259C11.2884 23.1249 12.1116 23.1249 12.6192 22.6259C13.1269 22.1269 13.1269 21.3178 12.6192 20.8188L3.13848 11.5001L12.6192 2.18143C13.1269 1.68242 13.1269 0.873378 12.6192 0.374375Z"
+                fill="#616161" />
+            </svg>
+          </div>
+          <div class="product-04-pagination"></div>
+          <div class="product-04-button-next">
+            <svg
+              width="13"
+              height="23"
+              viewBox="0 0 13 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.380761 22.626C0.888443 23.125 1.71156 23.125 2.21924 22.626L12.6192 12.4038C13.1269 11.9048 13.1269 11.0957 12.6192 10.5967L2.21924 0.374495C1.71156 -0.124508 0.888447 -0.124508 0.380765 0.374495C-0.126917 0.873501 -0.126917 1.68254 0.380765 2.18155L9.86152 11.5002L0.380762 20.8189C-0.12692 21.3179 -0.12692 22.127 0.380761 22.626Z"
+                fill="#616161" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifies -->
+  <section class="certifies spacing">
+    <div class="container certifies__container">
+      <h2 class="section-title center">Nossas <span>certificações</span></h2>
+      <p class="center base">
+        Controle, previsibilidade e segurança. As certificações da Omid garantem tranquilidade e transparência para a sua infraestrutura de TI off premise.
+      </p>
+
+      <div class="accordion-container">
+        <div class="ac">
+          <h2 class="ac-header">
+            <button type="button" class="ac-trigger">
+              Data Centers & Cloud
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <div class="ac-text">
+              <img
+                src="/images/home/home-certifies-01.webp"
+                alt="Certificações"
+                width="703"
+                loading="lazy"
+                decoding="async"
+                height="204" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <?php include(get_template_directory() . '/parts/video-section.php'); ?>
+
+  <!-- Partner -->
+  <section class="partner spacing">
+    <div class="container partner__container">
+      <div class="content">
+        <h2 class="section-title">
+          <span>Omid Partners Program</span>
+        </h2>
+        <p class="base">
+          <strong>Tenha oportunidades exclusivas e ganhos reais com o nosso programa de parceria.</strong>
+        </p>
+        <p class="base">Aproveite um plano de remuneração agressivo e aceleradores de ganhos por desempenho. Receba pagamentos de forma rápida e fácil, enquanto o portal de vendas integrado facilita suas conversões. Expanda sua oferta com novos serviços de cloud e aproveite o suporte de especialistas e treinamentos personalizados.</p>
+
+        <p class="base">
+          Saiba mais sobre como maximizar seus ganhos com o Omid Partners Program. Conheça todos os detalhes e aproveite os benefícios.
+        </p>
+
+        <button data-open-form class="button-primary arrow transparent"><span>CONHECER VANTAGENS</span></button>
+      </div>
+
+      <div class="image">
+        <img
+          src="/images/home/home-partner-img.png"
+          width="579"
+          height="353"
+          loading="lazy"
+          decoding="async"
+          aria-hidden="true"
+          alt="Imagem" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrips -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/pages/home.js"></script>
+</main>
+
+<style>
+  * {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  .form-wrapper {
+    background-color: #141414;
+    display: grid;
+    gap: 2rem;
+    position: fixed;
+    width: 94%;
+    max-width: 62.5rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999999;
+    color: #ffffff;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    display: none;
+  }
+
+  .overlay {
+    position: fixed;
+    z-index: 99999;
+    background-color: rgba(0, 0, 0, 0.575);
+    inset: 0;
+    display: none;
+  }
+
+  .form-wrapper.active {
+    display: grid;
+  }
+
+  .form-wrapper::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 173px;
+    background: #73ba69;
+    filter: blur(288.0789794921875px);
+    position: absolute;
+    left: 0;
+    top: 30%;
+  }
+
+  .form-wrapper .rd-section {
+    background-color: #050505 !important;
+    padding: 1rem !important;
+  }
+
+  .form-wrapper .content {
+    padding: 2rem;
+  }
+
+  .form-wrapper img {
+    height: auto;
+  }
+
+  .form-wrapper h2 {
+    margin-bottom: 1.75rem;
+  }
+
+  .form-wrapper p {
+    margin-bottom: 3rem;
+
+  }
+
+  @media (min-width: 45em) {
+    .form-wrapper {
+      grid-template-columns: 1.25fr 1fr;
+      align-items: start;
+    }
+
+    .form-wrapper .rd-section {
+      padding: 2rem !important;
+    }
+  }
+
+  .form-close {
+    color: #fff;
+    font-size: 2rem;
+    display: grid;
+    aspect-ratio: 1;
+    padding: .25rem;
+    line-height: 1;
+    position: absolute;
+    right: .5rem;
+    top: 0;
+  }
+</style>
+</head>
+<body>
+<button data-open-form>Abrir</button>
+
+<!-- RD -->
+<div class="overlay"></div>
+<div id="form" class="form-wrapper">
+  <div class="content">
+    <h2 class="section-title"><span>Conquiste números</span> que fazem toda a diferença</h2>
+    <p>de 20% a 40% de redução em custos, com maior performance para nossos clientes.</p>
+    <img
+         src="/images/logos.png"
+         alt="" />
+  </div>
+  <div>
+    <button class="form-close">&times</button>
+    <div role="main" id="site_hr-8ff192651f00b8fa8775"></div>
+    <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+    <script type="text/javascript">
+      new RDStationForms("site_hr-8ff192651f00b8fa8775", "").createForm();
+    </script>
+  </div>
+</div>
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="logo">
+                <img
+                    src="/images/logo-white-vertical.svg"
+                    width="133"
+                    height="143"
+                    decoding="async"
+                    loading="lazy"
+                    alt="Omid Solutions"
+                />
+            </div>
+
+            <div class="social">
+                <a href="https://www.instagram.com/omidsolutions/" target="_blank" aria-label="Instagram">
+                    <img
+                        src="/images/footer-social-instagram.svg"
+                        width="36"
+                        height="36"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        aria-hidden="true"
+                    />
+                </a>
+
+                <a href="https://www.facebook.com/OMIDSolutions" target="_blank" aria-label="Facebook">
+                    <img
+                        src="/images/footer-social-facebook.svg"
+                        width="36"
+                        height="36"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        aria-hidden="true"
+                    />
+                </a>
+
+                <a href="https://www.linkedin.com/company/omidsolutions/" target="_blank" aria-label="Linkedin">
+                    <img
+                        src="/images/footer-social-linkedin.svg"
+                        width="36"
+                        height="36"
+                        loading="lazy"
+                        decoding="async"
+                        alt=""
+                        aria-hidden="true"
+                    />
+                </a>
+            </div>
+
+            <div class="infos">
+                <div>
+                    <h6>Omid Barueri</h6>
+                    <p>
+                        <span
+                            ><svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </span>
+                        SAC/NOC (24x7): <a href="tel:08008781250">0800 878 1250</a>
+                    </p>
+                    <p>
+                        <span
+                            ><svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M7.89765 1.60025C9.45555 1.57458 10.9693 2.11833 12.1547 3.12946C13.3402 4.14059 14.1159 5.54958 14.3363 7.09202C14.5567 8.63446 14.2066 10.2043 13.3517 11.507C12.4969 12.8096 11.196 13.7555 9.69324 14.1672C8.19049 14.5788 6.58918 14.4279 5.1898 13.7427C5.0373 13.668 4.865 13.6439 4.69784 13.6736L2.12694 14.1318L2.85272 12.4603C2.9638 12.2045 2.93357 11.9093 2.77295 11.6813C1.87564 10.4075 1.47402 8.85004 1.64347 7.30117C1.81291 5.75231 2.54178 4.31852 3.69328 3.26889C4.84478 2.21925 6.33976 1.62592 7.89765 1.60025ZM13.1926 1.91259C11.7108 0.648685 9.81867 -0.0310027 7.8713 0.00108648C5.92393 0.0331756 4.05521 0.774835 2.61584 2.08688C1.17646 3.39892 0.265378 5.19116 0.0535681 7.12724C-0.141622 8.91141 0.269398 10.7047 1.2129 12.2212L0.0661731 14.8622C-0.0511764 15.1324 -0.0104107 15.4453 0.172268 15.6765C0.354947 15.9076 0.649942 16.0196 0.940009 15.9679L4.72864 15.2927C6.41899 16.0514 8.32347 16.2007 10.1158 15.7097C11.9942 15.1952 13.6203 14.0128 14.6889 12.3845C15.7575 10.7562 16.1951 8.79384 15.9196 6.86579C15.6441 4.93774 14.6745 3.1765 13.1926 1.91259ZM5.9977 4.38464C5.67957 4.38464 5.37446 4.51102 5.1495 4.73598C4.92454 4.96093 4.79816 5.26604 4.79816 5.58418V6.38387C4.79816 7.65642 5.30368 8.87685 6.20351 9.77668C7.10334 10.6765 8.32377 11.182 9.59632 11.182H10.396C10.7141 11.182 11.0193 11.0556 11.2442 10.8307C11.4692 10.6057 11.5955 10.3006 11.5955 9.98248C11.5955 9.66435 11.4692 9.35924 11.2442 9.13428C11.0193 8.90932 10.7141 8.78295 10.396 8.78295H9.59632C9.27818 8.78295 8.97307 8.90932 8.74812 9.13428C8.66722 9.21517 8.59908 9.30643 8.54497 9.40493C8.0936 9.24784 7.67881 8.9901 7.33445 8.64574C6.99008 8.30138 6.73235 7.88658 6.57526 7.43522C6.67376 7.38111 6.76501 7.31296 6.8459 7.23207C7.07086 7.00711 7.19724 6.702 7.19724 6.38387V5.58418C7.19724 5.26604 7.07086 4.96093 6.8459 4.73598C6.62095 4.51102 6.31584 4.38464 5.9977 4.38464Z"
+                                    fill="white"
+                                />
+                            </svg>
+                        </span>
+                        <a href="https://wa.me/5511999562354" target="_blank">+55 11 99956-2354 (WhatsApp)</a>
+                    </p>
+                    <p>
+                        <span
+                            ><svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                    fill="white"
+                                />
+                            </svg> </span
+                        >Comercial/Financeiro: <a href="tel:551144104300">+55 11 4410-4300</a>
+                    </p>
+
+                    <div>
+                    <p>
+                        <span
+                            ><svg
+                                width="16"
+                                height="19"
+                                viewBox="0 0 16 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M4.54315 2.82639C5.56639 2.1427 6.76938 1.77778 8 1.77778C9.23063 1.77778 10.4336 2.1427 11.4568 2.82639C12.4801 3.51008 13.2776 4.48184 13.7486 5.61878C14.2195 6.75573 14.3427 8.00679 14.1027 9.21377C13.8626 10.4207 13.27 11.5295 12.3999 12.3997L8.62867 16.1709C8.46199 16.3374 8.23604 16.4309 8.00044 16.4309C7.76485 16.4309 7.5389 16.3374 7.37222 16.1709L3.60002 12.3996C2.72991 11.5294 2.13737 10.4207 1.89732 9.21377C1.65726 8.00679 1.7805 6.75573 2.25145 5.61878C2.7224 4.48184 3.51992 3.51008 4.54315 2.82639ZM8 0C6.41777 0 4.87107 0.469181 3.55548 1.34821C2.2399 2.22725 1.21452 3.47665 0.609007 4.93844C0.00349362 6.40022 -0.154957 8.00873 0.153691 9.56057C0.462339 11.1124 1.22431 12.538 2.34309 13.6568L6.11578 17.4286C6.6158 17.9281 7.29367 18.2087 8.00044 18.2087C8.70722 18.2087 9.38541 17.9278 9.88543 17.4283L13.657 13.6567C14.7758 12.5379 15.5377 11.1124 15.8463 9.56057C16.155 8.00873 15.9965 6.40022 15.391 4.93844C14.7855 3.47665 13.7601 2.22725 12.4445 1.34821C11.1289 0.469181 9.58223 0 8 0ZM7.99999 4.44393C7.057 4.44393 6.15263 4.81854 5.48583 5.48533C4.81904 6.15213 4.44444 7.0565 4.44444 7.99949C4.44444 8.94248 4.81904 9.84685 5.48583 10.5136C6.15263 11.1804 7.057 11.555 7.99999 11.555C8.94298 11.555 9.84735 11.1804 10.5141 10.5136C11.1809 9.84685 11.5555 8.94248 11.5555 7.99949C11.5555 7.0565 11.1809 6.15213 10.5141 5.48533C9.84735 4.81854 8.94298 4.44393 7.99999 4.44393ZM6.74291 6.74241C7.07631 6.40901 7.52849 6.22171 7.99999 6.22171C8.47149 6.22171 8.92367 6.40901 9.25707 6.74241C9.59047 7.07581 9.77777 7.52799 9.77777 7.99949C9.77777 8.47098 9.59047 8.92317 9.25707 9.25657C8.92367 9.58996 8.47149 9.77726 7.99999 9.77726C7.52849 9.77726 7.07631 9.58996 6.74291 9.25657C6.40951 8.92317 6.22221 8.47098 6.22221 7.99949C6.22221 7.52799 6.40951 7.07581 6.74291 6.74241Z"
+                                    fill="white"
+                                />
+                            </svg> </span
+                        ><a
+                            href="https://www.google.com.br/maps/@-23.4923308,-46.8357696,3a,84.5y,208.84h,95.16t/data=!3m7!1e1!3m5!1s5CV4jXYjhsNAnaN69FaD0g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D5CV4jXYjhsNAnaN69FaD0g%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D193.8300696947755%26pitch%3D13.239087341675287%26thumbfov%3D90!7i16384!8i8192?coh=205409&entry=ttu"
+                            target="_blank"
+                            >Av. Aruanã, 452, Tamboré - Barueri - SP</a
+                        >
+                    </p>
+                    <p>CEP: 06460-010</p>
+                </div>
+                </div>
+
+                <div>
+                    <h6>Omid Rio de Janeiro</h6>
+                    <p>
+                        <span
+                            ><svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                    fill="white"
+                                />
+                            </svg> </span
+                        >Comercial/Financeiro: <a href="tel:552139009832">+55 21 3900-9832</a>
+                    </p>
+                    <p>
+                        <span
+                            ><svg
+                                width="16"
+                                height="19"
+                                viewBox="0 0 16 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M4.54315 2.82639C5.56639 2.1427 6.76938 1.77778 8 1.77778C9.23063 1.77778 10.4336 2.1427 11.4568 2.82639C12.4801 3.51008 13.2776 4.48184 13.7486 5.61878C14.2195 6.75573 14.3427 8.00679 14.1027 9.21377C13.8626 10.4207 13.27 11.5295 12.3999 12.3997L8.62867 16.1709C8.46199 16.3374 8.23604 16.4309 8.00044 16.4309C7.76485 16.4309 7.5389 16.3374 7.37222 16.1709L3.60002 12.3996C2.72991 11.5294 2.13737 10.4207 1.89732 9.21377C1.65726 8.00679 1.7805 6.75573 2.25145 5.61878C2.7224 4.48184 3.51992 3.51008 4.54315 2.82639ZM8 0C6.41777 0 4.87107 0.469181 3.55548 1.34821C2.2399 2.22725 1.21452 3.47665 0.609007 4.93844C0.00349362 6.40022 -0.154957 8.00873 0.153691 9.56057C0.462339 11.1124 1.22431 12.538 2.34309 13.6568L6.11578 17.4286C6.6158 17.9281 7.29367 18.2087 8.00044 18.2087C8.70722 18.2087 9.38541 17.9278 9.88543 17.4283L13.657 13.6567C14.7758 12.5379 15.5377 11.1124 15.8463 9.56057C16.155 8.00873 15.9965 6.40022 15.391 4.93844C14.7855 3.47665 13.7601 2.22725 12.4445 1.34821C11.1289 0.469181 9.58223 0 8 0ZM7.99999 4.44393C7.057 4.44393 6.15263 4.81854 5.48583 5.48533C4.81904 6.15213 4.44444 7.0565 4.44444 7.99949C4.44444 8.94248 4.81904 9.84685 5.48583 10.5136C6.15263 11.1804 7.057 11.555 7.99999 11.555C8.94298 11.555 9.84735 11.1804 10.5141 10.5136C11.1809 9.84685 11.5555 8.94248 11.5555 7.99949C11.5555 7.0565 11.1809 6.15213 10.5141 5.48533C9.84735 4.81854 8.94298 4.44393 7.99999 4.44393ZM6.74291 6.74241C7.07631 6.40901 7.52849 6.22171 7.99999 6.22171C8.47149 6.22171 8.92367 6.40901 9.25707 6.74241C9.59047 7.07581 9.77777 7.52799 9.77777 7.99949C9.77777 8.47098 9.59047 8.92317 9.25707 9.25657C8.92367 9.58996 8.47149 9.77726 7.99999 9.77726C7.52849 9.77726 7.07631 9.58996 6.74291 9.25657C6.40951 8.92317 6.22221 8.47098 6.22221 7.99949C6.22221 7.52799 6.40951 7.07581 6.74291 6.74241Z"
+                                    fill="white"
+                                />
+                            </svg> </span
+                        ><a
+                            href="https://www.google.com.br/maps/place/Estr.+dos+Bandeirantes,+7431+-+Jacarepagu%C3%A1,+Rio+de+Janeiro+-+RJ,+22780-081/@-22.9659834,-43.4131492,17z/data=!3m1!4b1!4m6!3m5!1s0x9bdc06b48fe2c3:0xae21ae5620a645ab!8m2!3d-22.9659884!4d-43.4105743!16s%2Fg%2F11rkl5hyps?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank"
+                            >Estr. dos Bandeirantes, 7431 - Jacarepaguá, Rio de Janeiro - RJ, 22780-081</a
+                        >
+                    </p>
+                </div>
+
+                
+            </div>
+
+            <div class="menu">
+                <a href="/sobre">Sobre</a>
+                <a href="/solucoes/omid-cloud">Omid Cloud</a>
+                <a href="/solucoes/data-center">Data Centers</a>
+                <a href="/solucoes/cyber-security">Cibersegurança</a>
+                <a href="/solucoes/it-services">Soluções de TI</a>
+                <a href="/blog">Blog</a>
+                <a href="/carreiras">Trabalhe Conosco</a>
+                <a href="/integridade-e-compliance">Integridade e Compliance</a>
+                <a href="#" data-open-form>Contato</a>
+                <a href="/wp-content/uploads/2024/10/POLT-006-Politica-de-Protecao-de-Dados-V1.1.1.pdf" target="_blank">Política de Proteção de Dados</a>
+                <a href="/wp-content/uploads/2024/10/POLT-005-Politica-de-Privacidade-V1.1.1.pdf" target="_blank">Política de Privacidade</a>
+                <a href="/wp-content/uploads/2025/01/POLT-007-Politica-da-Qualidade-V1.1.1.pdf" target="_blank">Política da Qualidade</a>
+            </div>
+
+            <div class="copy">
+                <p>&copy; 2024 Omid Solutions. Todos os Direitos Reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let isFormOpen = false;
+
+        const formWrapper = document.querySelector(".form-wrapper");
+        const buttonsOpenForm = Array.from(document.querySelectorAll("[data-open-form]"));
+        const overlay = document.querySelector(".overlay");
+        const buttonCloseForm = document.querySelector('.form-close')
+
+        function closeForm() {
+            isFormOpen = false;
+            formWrapper.classList.remove("active");
+            overlay.style.display = "none";
+        }
+
+        buttonsOpenForm.forEach((button) => {
+            button.addEventListener("click", (e) => {
+            if (isFormOpen) return;
+            if (!formWrapper) return;
+
+            isFormOpen = true;
+            overlay.style.display = "block";
+            formWrapper.classList.add("active");
+            });
+        });
+
+        if (formWrapper) {
+            overlay.addEventListener("click", (e) => {
+                closeForm()
+            });
+        }
+
+        if(buttonCloseForm) {
+            buttonCloseForm.addEventListener('click', e => {
+                closeForm()
+            })
+        }
+    </script>
+
+    <!-- JS -->
+    <script src="/js/global.js"></script>
+    <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/a0cf7067-8c96-4c07-86df-bc2b133f7895-loader.js" ></script>
+
+    <script>
+    // get the "contact" param from url and open contact form
+    document.addEventListener("DOMContentLoaded", () => {
+        const queryString = window.location.search
+        const urlParams = new URLSearchParams(queryString)
+
+        const isContact = urlParams.get("contact")
+
+        if (isContact) {
+        const buttonOpenForm = document.querySelector("[data-open-form]")
+
+        if (!buttonOpenForm) return
+
+        buttonOpenForm.click()
+        }
+    })
+    </script>
+
+
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWG8FCMC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+   
+</body>
+</html>

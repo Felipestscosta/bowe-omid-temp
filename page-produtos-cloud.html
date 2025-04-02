@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+
+        <!-- Google Fonts -->
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" /> -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+		<link rel="stylesheet" href="./styles/css/style.css" />
+
+
+        <!-- @TODO move to template -->
+        <!-- SEO -->
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PWG8FCMC');</script>
+
+		<?php wp_head(); ?>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container header__container">
+                <a href="/" aria-label="Omid Solutions">
+                    <img src="/images/logo-white-horizontal.svg" width="208" height="69" aria-hidden="true" />
+                </a>
+
+                <nav class="menu" data-header-menu>
+                    <ul class="list">
+                        <a href="/sobre">Sobre</a>
+                        <div class="group">
+                            <a href="#" class="has-sublist" data-has-sublist>Produtos</a>
+                            <ul class="sublist" data-sublist>
+                                <a href="/solucoes/omid-cloud">Omid Cloud</a>
+                                <a href="/solucoes/data-center">Data Centers</a>
+                                <a href="/solucoes/cyber-security">Cibersegurança</a>
+                                <a href="/solucoes/it-services">Soluções de TI</a>
+                            </ul>
+                        </div>
+                        <a href="/blog">Blog</a>
+                        <a href="/integridade-e-compliance">Integridade e Compliance</a>
+
+                        <div class="group">
+                            <a href="#" class="has-sublist" data-has-sublist>Configurador</a>
+                            <ul class="sublist" data-sublist>
+                                <a href="https://app.omidsolutions.com/login" target="_blank">Configurar agora</a>
+                            </ul>
+                        </div>
+                    </ul>
+
+                    <button data-open-form href="#" class="button-primary">Contato</button>
+                </nav>
+
+                <button class="hamburger" data-header-openner aria-label="abrir menu">
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+<!-- Main -->
+<main class="page-cloud">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero__container">
+            <h1 class="section-title">Máxima flexibilidade em nuvem <strong>sem lock in</strong></h1>
+            <p class="base">
+            Inove em tempo recorde com a Omid Cloud sem ficar preso a um único provedor. Você contará com flexibilidade e controle total sobre seus recursos, segurança, escalabilidade, performance garantida e previsibilidade de custos. E se em qualquer momento precisar de suporte, tenha à sua disposição um atendimento ágil e humanizado.
+            </p>
+
+            <a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary arrow">
+                <span>COMECE JÁ</span>
+            </a>
+        </div>
+
+        <div class="bg">
+            <img
+                src="/images/cloud/hero-bg.png"
+                aria-hidden="true"
+                loading="lazy"
+                decoding="async"
+                width="1920"
+                height="610"
+                alt=""
+            />
+        </div>
+    </section>
+
+    <!-- Icons -->
+    <section class="icons spacing">
+        <div class="container icons__container">
+            <ul class="list">
+                <li>
+                    <div class="image">
+                        <img
+                            src="/images/cloud/icons-icon-01.svg"
+                            width="46"
+                            height="46"
+                            aria-hidden="true"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content">
+                        <p>
+                            <strong>+ 7.500</strong> <br />
+                            máquinas virtuais
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image">
+                        <img
+                            src="/images/cloud/icons-icon-02.svg"
+                            width="46"
+                            height="46"
+                            aria-hidden="true"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content">
+                        <p>
+                            <strong>+ 500</strong> <br />
+                            petabytes de dados processados
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image">
+                        <img
+                            src="/images/cloud/icons-icon-03.svg"
+                            width="46"
+                            height="46"
+                            aria-hidden="true"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content">
+                        <p>Infraestrutura hiperconvergente de alta disponibilidade </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="image">
+                        <img
+                            src="/images/cloud/icons-icon-04.svg"
+                            width="46"
+                            height="46"
+                            aria-hidden="true"
+                            alt=""
+                        />
+                    </div>
+                    <div class="content">
+                        <p>Orquestrado com soluções nativas VMware</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Env -->
+    <section class="env spacing">
+        <div class="container env__container">
+            <h2 class="section-title center">Temos o ambiente <strong>ideal</strong> para você</h2>
+            <p class="base center">A nuvem do seu jeito. Customize a cloud para as demandas do seu negócio. </p>
+
+            <div class="cards">
+                <article>
+                    <div class="infos" id="VMwareCloudHyperLink">
+                        <h3>Omid VMware Cloud</h3>
+                        <p class="base">Baseada em Software-Defined Data Center (SDDC), infraestrutura hiperconvergente (HCI), orquestração VMware vCloud Director, é a nuvem perfeita para cargas de trabalho exigentes. Com total flexibilidade e interoperabilidade avançada com ambientes híbridos
+                        e multi-cloud, seus sistemas ficarão robustos e ágeis, liberando sua equipe para inovar, não administrar.</p>
+
+                        <a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary arrow">ESCOLHA SUA NUVEM AGORA</a>
+
+                        <div class="arrow">
+                        <svg width="28" height="58" viewBox="0 0 28 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<path d="M2 44L14 56L26 44" stroke="white" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 23L14 35L26 23" stroke="white" stroke-opacity="0.2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 2L14 14L26 2" stroke="white" stroke-opacity="0.05" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+
+                        </div>
+                    </div>
+
+                    <div class="table">
+                        <ul>
+                            <li>
+                                <div>
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 4H17M14 1V7M1 2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6C6.26522 1 6.51957 1.10536 6.70711 1.29289C6.89464 1.48043 7 1.73478 7 2V6C7 6.26522 6.89464 6.51957 6.70711 6.70711C6.51957 6.89464 6.26522 7 6 7H2C1.73478 7 1.48043 6.89464 1.29289 6.70711C1.10536 6.51957 1 6.26522 1 6V2ZM1 12C1 11.7348 1.10536 11.4804 1.29289 11.2929C1.48043 11.1054 1.73478 11 2 11H6C6.26522 11 6.51957 11.1054 6.70711 11.2929C6.89464 11.4804 7 11.7348 7 12V16C7 16.2652 6.89464 16.5196 6.70711 16.7071C6.51957 16.8946 6.26522 17 6 17H2C1.73478 17 1.48043 16.8946 1.29289 16.7071C1.10536 16.5196 1 16.2652 1 16V12ZM11 12C11 11.7348 11.1054 11.4804 11.2929 11.2929C11.4804 11.1054 11.7348 11 12 11H16C16.2652 11 16.5196 11.1054 16.7071 11.2929C16.8946 11.4804 17 11.7348 17 12V16C17 16.2652 16.8946 16.5196 16.7071 16.7071C16.5196 16.8946 16.2652 17 16 17H12C11.7348 17 11.4804 16.8946 11.2929 16.7071C11.1054 16.5196 11 16.2652 11 16V12Z" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Pool de recursos dedicados (não há compartilhamento)</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 13V10M5 13V7M9 13V4M13 13V1" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Liberdade na quantidade
+                                de VMs provisionadas</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1H19M19 1V6M19 1L11.464 8.536C10.5269 9.47338 10.0003 10.7445 10 12.07M6 1H1M1 1V6M1 1L8.536 8.536C9.47314 9.47338 9.99972 10.7445 10 12.07M10 12.07V19M10 12.07V13" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Liberdade na distribuição dos recursos entre as VMs</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.924 9.132C14.7523 8.1581 14.2957 7.25697 13.6119 6.54258C12.9281 5.82818 12.0478 5.33261 11.0824 5.11851C10.1169 4.90442 9.10964 4.98143 8.18795 5.33981C7.26626 5.69818 6.47153 6.32182 5.90428 7.13186C5.33702 7.94191 5.02272 8.90197 5.0011 9.89065C4.97949 10.8793 5.25154 11.8522 5.78285 12.6863C6.31416 13.5203 7.08087 14.1781 7.98602 14.5764C8.89117 14.9747 9.89411 15.0957 10.868 14.924M1 10C1 11.78 1.52784 13.5201 2.51677 15.0001C3.50571 16.4802 4.91131 17.6337 6.55585 18.3149C8.20038 18.9961 10.01 19.1743 11.7558 18.8271C13.5016 18.4798 15.1053 17.6226 16.364 16.364C17.6226 15.1053 18.4798 13.5016 18.8271 11.7558C19.1743 10.01 18.9961 8.20038 18.3149 6.55585C17.6337 4.91131 16.4802 3.50571 15.0001 2.51677C13.5201 1.52784 11.78 1 10 1M9 10C9 10.2652 9.10536 10.5196 9.29289 10.7071C9.48043 10.8946 9.73478 11 10 11C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10C11 9.73478 10.8946 9.48043 10.7071 9.29289C10.5196 9.10536 10.2652 9 10 9C9.73478 9 9.48043 9.10536 9.29289 9.29289C9.10536 9.48043 9 9.73478 9 10Z" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Tenant dedicado do vCenter para gestão dos recursos contratados</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1L6.33333 11.6667C4.25054 9.58387 3.0828 8.41613 1 6.33333" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Virtualização de rede
+                                (NSX-t) sem custo</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1L6.33333 11.6667C4.25054 9.58387 3.0828 8.41613 1 6.33333" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Distributed Firewall (tráfego leste-oeste) sem custo</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 1L6.33333 11.6667C4.25054 9.58387 3.0828 8.41613 1 6.33333" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Gateway Firewall (tráfego norte-sul) sem custo</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12C7 13.657 9.686 15 13 15C16.314 15 19 13.657 19 12M7 12C7 10.343 9.686 9 13 9C16.314 9 19 10.343 19 12M7 12V16C7 17.656 9.686 19 13 19C16.314 19 19 17.656 19 16V12M1 4C1 5.072 2.144 6.062 4 6.598C5.856 7.134 8.144 7.134 10 6.598C11.856 6.062 13 5.072 13 4C13 2.928 11.856 1.938 10 1.402C8.144 0.866 5.856 0.866 4 1.402C2.144 1.938 1 2.928 1 4ZM1 4V14C1 14.888 1.772 15.45 3 16M1 9C1 9.888 1.772 10.45 3 11" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                    </div>
+                                    <p class="base">Cobrança mensal fixa sem variações</p>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="infos" id="ComputeCloudHyperLink">
+                        <h3>Omid Compute Cloud (OC2)</h3>
+                        <p class="base">Monte você mesmo a sua infraestrutura em uma nuvem projetada para oferecer o melhor custo-benefício do mercado. Perfeita para cargas de trabalho gerais, como bancos de dados, aplicações WEB e mobile, conteúdos de mídia, DevOps, ambientes de homologação, e aplicações. O OC2 combina eficiência e economia, permitindo que você pague somente pelo tempo utilizado do recurso.</p>
+
+                        <a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary arrow">ESCOLHA SUA NUVEM AGORA</a>
+
+                        <div class="arrow">
+                        <svg width="28" height="58" viewBox="0 0 28 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<path d="M2 44L14 56L26 44" stroke="white" stroke-opacity="0.7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 23L14 35L26 23" stroke="white" stroke-opacity="0.2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M2 2L14 14L26 2" stroke="white" stroke-opacity="0.05" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+
+                        </div>
+                    </div>
+
+                    <div class="table">
+                        <ul>
+                            <li>
+                                <div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.325 2.317C8.751 0.561 11.249 0.561 11.675 2.317C11.7389 2.5808 11.8642 2.82578 12.0407 3.032C12.2172 3.23822 12.4399 3.39985 12.6907 3.50375C12.9414 3.60764 13.2132 3.65085 13.4838 3.62987C13.7544 3.60889 14.0162 3.5243 14.248 3.383C15.791 2.443 17.558 4.209 16.618 5.753C16.4769 5.98466 16.3924 6.24634 16.3715 6.51677C16.3506 6.78721 16.3938 7.05877 16.4975 7.30938C16.6013 7.55999 16.7627 7.78258 16.9687 7.95905C17.1747 8.13553 17.4194 8.26091 17.683 8.325C19.439 8.751 19.439 11.249 17.683 11.675C17.4192 11.7389 17.1742 11.8642 16.968 12.0407C16.7618 12.2172 16.6001 12.4399 16.4963 12.6907C16.3924 12.9414 16.3491 13.2132 16.3701 13.4838C16.3911 13.7544 16.4757 14.0162 16.617 14.248C17.557 15.791 15.791 17.558 14.247 16.618C14.0153 16.4769 13.7537 16.3924 13.4832 16.3715C13.2128 16.3506 12.9412 16.3938 12.6906 16.4975C12.44 16.6013 12.2174 16.7627 12.0409 16.9687C11.8645 17.1747 11.7391 17.4194 11.675 17.683C11.249 19.439 8.751 19.439 8.325 17.683C8.26108 17.4192 8.13578 17.1742 7.95929 16.968C7.7828 16.7618 7.56011 16.6001 7.30935 16.4963C7.05859 16.3924 6.78683 16.3491 6.51621 16.3701C6.24559 16.3911 5.98375 16.4757 5.752 16.617C4.209 17.557 2.442 15.791 3.382 14.247C3.5231 14.0153 3.60755 13.7537 3.62848 13.4832C3.64942 13.2128 3.60624 12.9412 3.50247 12.6906C3.3987 12.44 3.23726 12.2174 3.03127 12.0409C2.82529 11.8645 2.58056 11.7391 2.317 11.675C0.561 11.249 0.561 8.751 2.317 8.325C2.5808 8.26108 2.82578 8.13578 3.032 7.95929C3.23822 7.7828 3.39985 7.56011 3.50375 7.30935C3.60764 7.05859 3.65085 6.78683 3.62987 6.51621C3.60889 6.24559 3.5243 5.98375 3.383 5.752C2.443 4.209 4.209 2.442 5.753 3.382C6.753 3.99 8.049 3.452 8.325 2.317Z" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7 10C7 10.7956 7.31607 11.5587 7.87868 12.1213C8.44129 12.6839 9.20435 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 10 7C9.20435 7 8.44129 7.31607 7.87868 7.87868C7.31607 8.44129 7 9.20435 7 10Z" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Gerencie sua nuvem através de painéis de controle, CLI
+                                e restAPI</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 1L5 8H13L9 1Z" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11 15C11 15.7956 11.3161 16.5587 11.8787 17.1213C12.4413 17.6839 13.2044 18 14 18C14.7956 18 15.5587 17.6839 16.1213 17.1213C16.6839 16.5587 17 15.7956 17 15C17 14.2044 16.6839 13.4413 16.1213 12.8787C15.5587 12.3161 14.7956 12 14 12C13.2044 12 12.4413 12.3161 11.8787 12.8787C11.3161 13.4413 11 14.2044 11 15Z" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1 13C1 12.7348 1.10536 12.4804 1.29289 12.2929C1.48043 12.1054 1.73478 12 2 12H6C6.26522 12 6.51957 12.1054 6.70711 12.2929C6.89464 12.4804 7 12.7348 7 13V17C7 17.2652 6.89464 17.5196 6.70711 17.7071C6.51957 17.8946 6.26522 18 6 18H2C1.73478 18 1.48043 17.8946 1.29289 17.7071C1.10536 17.5196 1 17.2652 1 17V13Z" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Fácil integração com scripts e automação, essencial para DevOps</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5 5L1 9L5 13M15 5L19 9L15 13M12 1L8 17" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Ampla opção de VMs
+                                pré-definidas</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 2L2.5 3.5L5 1M1 8L2.5 9.5L5 7M1 14L2.5 15.5L5 13M8.5 2.5H17.5M8.5 8.5H17.5M8.5 14.5H17.5" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Templates de instâncias para rápido deploy</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 15C3.53043 15 4.03914 15.2107 4.41421 15.5858C4.78929 15.9609 5 16.4696 5 17C5 17.5304 4.78929 18.0391 4.41421 18.4142C4.03914 18.7893 3.53043 19 3 19C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17C1 16.4696 1.21071 15.9609 1.58579 15.5858C1.96086 15.2107 2.46957 15 3 15ZM3 15H14M3 15V1H1M14 15C14.5304 15 15.0391 15.2107 15.4142 15.5858C15.7893 15.9609 16 16.4696 16 17C16 17.5304 15.7893 18.0391 15.4142 18.4142C15.0391 18.7893 14.5304 19 14 19C13.4696 19 12.9609 18.7893 12.5858 18.4142C12.2107 18.0391 12 17.5304 12 17C12 16.4696 12.2107 15.9609 12.5858 15.5858C12.9609 15.2107 13.4696 15 14 15ZM3 3L17 4L16 11H3" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Plataforma de compra intuitiva e fácil de operar</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7 12C7 13.657 9.686 15 13 15C16.314 15 19 13.657 19 12M7 12C7 10.343 9.686 9 13 9C16.314 9 19 10.343 19 12M7 12V16C7 17.656 9.686 19 13 19C16.314 19 19 17.656 19 16V12M1 4C1 5.072 2.144 6.062 4 6.598C5.856 7.134 8.144 7.134 10 6.598C11.856 6.062 13 5.072 13 4C13 2.928 11.856 1.938 10 1.402C8.144 0.866 5.856 0.866 4 1.402C2.144 1.938 1 2.928 1 4ZM1 4V14C1 14.888 1.772 15.45 3 16M1 9C1 9.888 1.772 10.45 3 11" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Cobrado pelo tempo
+                                de uso do recurso</p>
+                            </li>
+                            <li>
+                                <div>
+                                <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.1913 12.6999C2.8765 12.6999 1 10.8936 1 8.6652C1 6.4377 2.8765 4.6314 5.1913 4.6314C5.545 3.0456 6.8059 1.7514 8.4988 1.2357C10.1908 0.720896 12.0592 1.062 13.3984 2.1357C14.7376 3.2067 15.3442 4.842 14.9914 6.4278H15.8824C17.6041 6.4278 19 7.8318 19 9.5652C19 11.2995 17.6041 12.7035 15.8815 12.7035H5.1913" stroke="#FBBC43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+                                </div>
+                                <p class="base">Opção de cloud elástica que se ajusta
+                                automaticamente às variações de demanda</p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="solutions spacing">
+        <div class="container solutions__container">
+            <h2 class="section-title center">Soluções que elevam sua <strong>performance na nuvem</strong></h2>
+
+            <div class="accordion-container solutions-ac">
+                <div class="ac card-01">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <h3 class="section-title">Cloud Backup & Data Protection</h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                        Garanta a proteção dos seus dados corporativos e a continuidade do seu negócio através de soluções personalizadas de disaster recovery, backup em nuvem, repositórios dedicados para backup off-site com replicação geográfica e archiving.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ac card-02">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <h3 class="section-title">VMware Extended</h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                        Gestão unificada de toda a sua infraestrutura VMware, tanto on-premise quanto em nuvem, centralizada em uma única interface para maior controle, visibilidade e eficiência operacional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ac card-03">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <h3 class="section-title">Cloud Storage</h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                        Mais fôlego – e espaço – aos servidores da sua empresa. Expanda com segurança a sua capacidade de armazenamento de dados sem os altos custos de investimento em hardware físico adicional.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ac card-04">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <h3 class="section-title">Virtual Desktop (VDI)</h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                            Virtualize, customize e compartilhe a área de trabalho de suas equipes, convertendo
+                            o investimento (CAPEX) em uma previsível despesa mensal (OPEX).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ac card-05">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <h3 class="section-title">Collab Space</h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                        Facilite a colaboração, acelere projetos e aumente a eficiência da sua equipe com uma incrível ferramenta que centraliza a gestão de arquivos e possibilita o seu versionamento. Edite documentos office na WEB e interaja através de chat e videoconferência! Tudo fácil de usar e customizado com a sua logo.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ac card-06">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <h3 class="section-title">Serverless</h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                        Simplifique suas operações com nossa solução de Serverless na nuvem. Execute suas aplicações sem se preocupar com a infraestrutura, pagando apenas pelo uso real. Escalabilidade automática, alta performance e redução de custos para que você foque apenas no desenvolvimento e inovação do seu negócio.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="ac card-07">
+                    <div class="ac-header">
+                        <button type="button" class="ac-trigger">
+                            <h3 class="section-title">Inteligência Artificial</h3>
+                        </button>
+                    </div>
+                    <div class="ac-panel">
+                        <p class="ac-text">
+                        Potencialize sua estratégia de Inteligência Artificial com nossa solução de IaaS. Escalabilidade, performance e flexibilidade sob demanda para acelerar o processamento de dados e treinar modelos complexos, sem os custos e limitações de hardware físico. Ideal para levar sua AI ao próximo nível.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="image">
+                    <img
+                        src="/images/cloud/Cloud_grey.gif"
+                        width="440"
+                        height="268"
+                        aria-hidden="true"
+                        alt=""
+                    />
+                <!-- <video autoplay muted loop id="vid">
+                    <source src="/images/cloud/Cloud_grey.gif" />
+                </video>
+                <script>
+                    document.getElementById("vid").play()
+                </script> -->
+                </div>
+            </div>
+
+            <a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary center arrow"><span>COMPRAR AGORA</span></a>
+        </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container banner__container">
+            <h2 class="section-title center">
+                Comece a usar a melhor <strong>security cloud provider</strong> do mercado
+            </h2>
+            <p class="base">
+            Monte você mesmo seu datacenter virtual na Omid Cloud - e se precisar de ajuda, estaremos aqui para te atender!
+            </p>
+            <p class="base">Crie sua conta e veja como é fácil.</p>
+
+            <a href="https://app.omidsolutions.com/login" target="_blank" class="button-primary arrow center">
+                <span>CRIE SUA CONTA</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- JS -->
+<link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
+<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
+<script>
+    const solutionsAc = new Accordion(".solutions-ac", {
+        duration: 200,
+    })
+    solutionsAc.open(0)
+
+    const accs = Array.from(document.querySelectorAll(".accordion-container .ac"))
+    accs.forEach((a, idx) => {
+        a.addEventListener("mouseover", e => {
+            solutionsAc.open(idx)
+        })
+
+        a.addEventListener("mouseleave", e => {
+            solutionsAc.close(idx)
+        })
+    })
+</script>
+
+
+<style>
+    * {
+      padding: 0;
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    .form-wrapper {
+      background-color: #141414;
+      display: grid;
+      gap: 2rem;
+      position: fixed;
+      width: 94%;
+      max-width: 62.5rem;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 999999999;
+      color: #ffffff;
+      max-height: 90vh;
+      overflow-y: auto;
+
+      display: none;
+    }
+
+    .overlay {
+      position: fixed;
+      z-index: 99999;
+      background-color: rgba(0, 0, 0, 0.575);
+      inset: 0;
+      display: none;
+    }
+
+    .form-wrapper.active {
+      display: grid;
+    }
+
+    .form-wrapper::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      flex-shrink: 0;
+      border-radius: 173px;
+      background: #73ba69;
+      filter: blur(288.0789794921875px);
+      position: absolute;
+      left: 0;
+      top: 30%;
+    }
+
+    .form-wrapper .rd-section {
+      background-color: #050505 !important;
+      padding: 1rem !important;
+    }
+
+    .form-wrapper .content {
+      padding: 2rem;
+    }
+
+    .form-wrapper img {
+      height: auto;
+    }
+
+    .form-wrapper h2 {
+      margin-bottom: 1.75rem;
+    }
+
+    .form-wrapper p {
+      margin-bottom: 3rem;
+
+    }
+
+    @media (min-width: 45em) {
+      .form-wrapper {
+        grid-template-columns: 1.25fr 1fr;
+        align-items: start;
+      }
+
+      .form-wrapper .rd-section {
+        padding: 2rem !important;
+      }
+    }
+
+    .form-close {
+      color: #fff;
+      font-size: 2rem;
+      display: grid;
+      aspect-ratio: 1;
+      padding: .25rem;
+      line-height: 1;
+      position: absolute;
+      right: .5rem;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <button data-open-form>Abrir</button>
+
+  <!-- RD -->
+  <div class="overlay"></div>
+  <div id="form" class="form-wrapper">
+    <div class="content">
+      <h2 class="section-title"><span>Conquiste números</span> que fazem toda a diferença</h2>
+      <p>de 20% a 40% de redução em custos, com maior performance para nossos clientes.</p>
+      <img
+           src="/images/logos.png"
+           alt="" />
+    </div>
+    <div>
+      <button class="form-close">&times</button>
+      <div role="main" id="site_hr-8ff192651f00b8fa8775"></div>
+      <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+      <script type="text/javascript">
+        new RDStationForms("site_hr-8ff192651f00b8fa8775", "").createForm();
+      </script>
+    </div>
+  </div>
+
+  <!-- Footer -->
+      <footer class="footer">
+          <div class="container footer__container">
+              <div class="logo">
+                  <img
+                      src="/images/logo-white-vertical.svg"
+                      width="133"
+                      height="143"
+                      decoding="async"
+                      loading="lazy"
+                      alt="Omid Solutions"
+                  />
+              </div>
+
+              <div class="social">
+                  <a href="https://www.instagram.com/omidsolutions/" target="_blank" aria-label="Instagram">
+                      <img
+                          src="/images/footer-social-instagram.svg"
+                          width="36"
+                          height="36"
+                          loading="lazy"
+                          decoding="async"
+                          alt=""
+                          aria-hidden="true"
+                      />
+                  </a>
+
+                  <a href="https://www.facebook.com/OMIDSolutions" target="_blank" aria-label="Facebook">
+                      <img
+                          src="/images/footer-social-facebook.svg"
+                          width="36"
+                          height="36"
+                          loading="lazy"
+                          decoding="async"
+                          alt=""
+                          aria-hidden="true"
+                      />
+                  </a>
+
+                  <a href="https://www.linkedin.com/company/omidsolutions/" target="_blank" aria-label="Linkedin">
+                      <img
+                          src="/images/footer-social-linkedin.svg"
+                          width="36"
+                          height="36"
+                          loading="lazy"
+                          decoding="async"
+                          alt=""
+                          aria-hidden="true"
+                      />
+                  </a>
+              </div>
+
+              <div class="infos">
+                  <div>
+                      <h6>Omid Barueri</h6>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                      fill="white"
+                                  />
+                              </svg>
+                          </span>
+                          SAC/NOC (24x7): <a href="tel:08008781250">0800 878 1250</a>
+                      </p>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M7.89765 1.60025C9.45555 1.57458 10.9693 2.11833 12.1547 3.12946C13.3402 4.14059 14.1159 5.54958 14.3363 7.09202C14.5567 8.63446 14.2066 10.2043 13.3517 11.507C12.4969 12.8096 11.196 13.7555 9.69324 14.1672C8.19049 14.5788 6.58918 14.4279 5.1898 13.7427C5.0373 13.668 4.865 13.6439 4.69784 13.6736L2.12694 14.1318L2.85272 12.4603C2.9638 12.2045 2.93357 11.9093 2.77295 11.6813C1.87564 10.4075 1.47402 8.85004 1.64347 7.30117C1.81291 5.75231 2.54178 4.31852 3.69328 3.26889C4.84478 2.21925 6.33976 1.62592 7.89765 1.60025ZM13.1926 1.91259C11.7108 0.648685 9.81867 -0.0310027 7.8713 0.00108648C5.92393 0.0331756 4.05521 0.774835 2.61584 2.08688C1.17646 3.39892 0.265378 5.19116 0.0535681 7.12724C-0.141622 8.91141 0.269398 10.7047 1.2129 12.2212L0.0661731 14.8622C-0.0511764 15.1324 -0.0104107 15.4453 0.172268 15.6765C0.354947 15.9076 0.649942 16.0196 0.940009 15.9679L4.72864 15.2927C6.41899 16.0514 8.32347 16.2007 10.1158 15.7097C11.9942 15.1952 13.6203 14.0128 14.6889 12.3845C15.7575 10.7562 16.1951 8.79384 15.9196 6.86579C15.6441 4.93774 14.6745 3.1765 13.1926 1.91259ZM5.9977 4.38464C5.67957 4.38464 5.37446 4.51102 5.1495 4.73598C4.92454 4.96093 4.79816 5.26604 4.79816 5.58418V6.38387C4.79816 7.65642 5.30368 8.87685 6.20351 9.77668C7.10334 10.6765 8.32377 11.182 9.59632 11.182H10.396C10.7141 11.182 11.0193 11.0556 11.2442 10.8307C11.4692 10.6057 11.5955 10.3006 11.5955 9.98248C11.5955 9.66435 11.4692 9.35924 11.2442 9.13428C11.0193 8.90932 10.7141 8.78295 10.396 8.78295H9.59632C9.27818 8.78295 8.97307 8.90932 8.74812 9.13428C8.66722 9.21517 8.59908 9.30643 8.54497 9.40493C8.0936 9.24784 7.67881 8.9901 7.33445 8.64574C6.99008 8.30138 6.73235 7.88658 6.57526 7.43522C6.67376 7.38111 6.76501 7.31296 6.8459 7.23207C7.07086 7.00711 7.19724 6.702 7.19724 6.38387V5.58418C7.19724 5.26604 7.07086 4.96093 6.8459 4.73598C6.62095 4.51102 6.31584 4.38464 5.9977 4.38464Z"
+                                      fill="white"
+                                  />
+                              </svg>
+                          </span>
+                          <a href="https://wa.me/5511999562354" target="_blank">+55 11 99956-2354 (WhatsApp)</a>
+                      </p>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          >Comercial/Financeiro: <a href="tel:551144104300">+55 11 4410-4300</a>
+                      </p>
+
+                      <div>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="19"
+                                  viewBox="0 0 16 19"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M4.54315 2.82639C5.56639 2.1427 6.76938 1.77778 8 1.77778C9.23063 1.77778 10.4336 2.1427 11.4568 2.82639C12.4801 3.51008 13.2776 4.48184 13.7486 5.61878C14.2195 6.75573 14.3427 8.00679 14.1027 9.21377C13.8626 10.4207 13.27 11.5295 12.3999 12.3997L8.62867 16.1709C8.46199 16.3374 8.23604 16.4309 8.00044 16.4309C7.76485 16.4309 7.5389 16.3374 7.37222 16.1709L3.60002 12.3996C2.72991 11.5294 2.13737 10.4207 1.89732 9.21377C1.65726 8.00679 1.7805 6.75573 2.25145 5.61878C2.7224 4.48184 3.51992 3.51008 4.54315 2.82639ZM8 0C6.41777 0 4.87107 0.469181 3.55548 1.34821C2.2399 2.22725 1.21452 3.47665 0.609007 4.93844C0.00349362 6.40022 -0.154957 8.00873 0.153691 9.56057C0.462339 11.1124 1.22431 12.538 2.34309 13.6568L6.11578 17.4286C6.6158 17.9281 7.29367 18.2087 8.00044 18.2087C8.70722 18.2087 9.38541 17.9278 9.88543 17.4283L13.657 13.6567C14.7758 12.5379 15.5377 11.1124 15.8463 9.56057C16.155 8.00873 15.9965 6.40022 15.391 4.93844C14.7855 3.47665 13.7601 2.22725 12.4445 1.34821C11.1289 0.469181 9.58223 0 8 0ZM7.99999 4.44393C7.057 4.44393 6.15263 4.81854 5.48583 5.48533C4.81904 6.15213 4.44444 7.0565 4.44444 7.99949C4.44444 8.94248 4.81904 9.84685 5.48583 10.5136C6.15263 11.1804 7.057 11.555 7.99999 11.555C8.94298 11.555 9.84735 11.1804 10.5141 10.5136C11.1809 9.84685 11.5555 8.94248 11.5555 7.99949C11.5555 7.0565 11.1809 6.15213 10.5141 5.48533C9.84735 4.81854 8.94298 4.44393 7.99999 4.44393ZM6.74291 6.74241C7.07631 6.40901 7.52849 6.22171 7.99999 6.22171C8.47149 6.22171 8.92367 6.40901 9.25707 6.74241C9.59047 7.07581 9.77777 7.52799 9.77777 7.99949C9.77777 8.47098 9.59047 8.92317 9.25707 9.25657C8.92367 9.58996 8.47149 9.77726 7.99999 9.77726C7.52849 9.77726 7.07631 9.58996 6.74291 9.25657C6.40951 8.92317 6.22221 8.47098 6.22221 7.99949C6.22221 7.52799 6.40951 7.07581 6.74291 6.74241Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          ><a
+                              href="https://www.google.com.br/maps/@-23.4923308,-46.8357696,3a,84.5y,208.84h,95.16t/data=!3m7!1e1!3m5!1s5CV4jXYjhsNAnaN69FaD0g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D5CV4jXYjhsNAnaN69FaD0g%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D193.8300696947755%26pitch%3D13.239087341675287%26thumbfov%3D90!7i16384!8i8192?coh=205409&entry=ttu"
+                              target="_blank"
+                              >Av. Aruanã, 452, Tamboré - Barueri - SP</a
+                          >
+                      </p>
+                      <p>CEP: 06460-010</p>
+                  </div>
+                  </div>
+
+                  <div>
+                      <h6>Omid Rio de Janeiro</h6>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="16"
+                                  viewBox="0 0 16 16"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M2.52632 1.68421C2.30298 1.68421 2.08878 1.77293 1.93086 1.93086C1.77803 2.08369 1.69001 2.28921 1.68449 2.50473C1.87816 5.57331 3.1845 8.46629 5.3591 10.6409C7.53371 12.8155 10.4267 14.1218 13.4953 14.3155C13.7108 14.31 13.9163 14.222 14.0691 14.0691C14.2271 13.9112 14.3158 13.697 14.3158 13.4737V10.6754L11.3005 9.46928L10.4063 10.9596C10.1808 11.3354 9.70479 11.4754 9.31174 11.2816C7.31684 10.2977 5.70228 8.68316 4.71843 6.68826C4.52458 6.29521 4.66462 5.81917 5.04042 5.59369L6.53072 4.69951L5.3246 1.68421H2.52632ZM0.739941 0.739941C1.21372 0.266164 1.8563 0 2.52632 0H5.89474C6.23908 0 6.54873 0.209643 6.67661 0.529355L8.36082 4.73988C8.51433 5.12364 8.36663 5.56208 8.01221 5.77473L6.60252 6.62054C7.2963 7.75201 8.24799 8.7037 9.37946 9.39748L10.2253 7.98779C10.4379 7.63337 10.8764 7.48567 11.2601 7.63918L15.4706 9.32339C15.7904 9.45127 16 9.76092 16 10.1053V13.4737C16 14.1437 15.7338 14.7863 15.2601 15.2601C14.7863 15.7338 14.1437 16 13.4737 16C13.4566 16 13.4396 15.9995 13.4226 15.9985C9.93247 15.7864 6.64064 14.3043 4.16819 11.8318C1.69574 9.35937 0.213648 6.06753 0.00155067 2.5774C0.000517142 2.56039 0 2.54335 0 2.52632C0 1.8563 0.266164 1.21372 0.739941 0.739941Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          >Comercial/Financeiro: <a href="tel:552139009832">+55 21 3900-9832</a>
+                      </p>
+                      <p>
+                          <span
+                              ><svg
+                                  width="16"
+                                  height="19"
+                                  viewBox="0 0 16 19"
+                                  fill="none"
+                                  xmlns="http://www.w3.org/2000/svg"
+                              >
+                                  <path
+                                      fill-rule="evenodd"
+                                      clip-rule="evenodd"
+                                      d="M4.54315 2.82639C5.56639 2.1427 6.76938 1.77778 8 1.77778C9.23063 1.77778 10.4336 2.1427 11.4568 2.82639C12.4801 3.51008 13.2776 4.48184 13.7486 5.61878C14.2195 6.75573 14.3427 8.00679 14.1027 9.21377C13.8626 10.4207 13.27 11.5295 12.3999 12.3997L8.62867 16.1709C8.46199 16.3374 8.23604 16.4309 8.00044 16.4309C7.76485 16.4309 7.5389 16.3374 7.37222 16.1709L3.60002 12.3996C2.72991 11.5294 2.13737 10.4207 1.89732 9.21377C1.65726 8.00679 1.7805 6.75573 2.25145 5.61878C2.7224 4.48184 3.51992 3.51008 4.54315 2.82639ZM8 0C6.41777 0 4.87107 0.469181 3.55548 1.34821C2.2399 2.22725 1.21452 3.47665 0.609007 4.93844C0.00349362 6.40022 -0.154957 8.00873 0.153691 9.56057C0.462339 11.1124 1.22431 12.538 2.34309 13.6568L6.11578 17.4286C6.6158 17.9281 7.29367 18.2087 8.00044 18.2087C8.70722 18.2087 9.38541 17.9278 9.88543 17.4283L13.657 13.6567C14.7758 12.5379 15.5377 11.1124 15.8463 9.56057C16.155 8.00873 15.9965 6.40022 15.391 4.93844C14.7855 3.47665 13.7601 2.22725 12.4445 1.34821C11.1289 0.469181 9.58223 0 8 0ZM7.99999 4.44393C7.057 4.44393 6.15263 4.81854 5.48583 5.48533C4.81904 6.15213 4.44444 7.0565 4.44444 7.99949C4.44444 8.94248 4.81904 9.84685 5.48583 10.5136C6.15263 11.1804 7.057 11.555 7.99999 11.555C8.94298 11.555 9.84735 11.1804 10.5141 10.5136C11.1809 9.84685 11.5555 8.94248 11.5555 7.99949C11.5555 7.0565 11.1809 6.15213 10.5141 5.48533C9.84735 4.81854 8.94298 4.44393 7.99999 4.44393ZM6.74291 6.74241C7.07631 6.40901 7.52849 6.22171 7.99999 6.22171C8.47149 6.22171 8.92367 6.40901 9.25707 6.74241C9.59047 7.07581 9.77777 7.52799 9.77777 7.99949C9.77777 8.47098 9.59047 8.92317 9.25707 9.25657C8.92367 9.58996 8.47149 9.77726 7.99999 9.77726C7.52849 9.77726 7.07631 9.58996 6.74291 9.25657C6.40951 8.92317 6.22221 8.47098 6.22221 7.99949C6.22221 7.52799 6.40951 7.07581 6.74291 6.74241Z"
+                                      fill="white"
+                                  />
+                              </svg> </span
+                          ><a
+                              href="https://www.google.com.br/maps/place/Estr.+dos+Bandeirantes,+7431+-+Jacarepagu%C3%A1,+Rio+de+Janeiro+-+RJ,+22780-081/@-22.9659834,-43.4131492,17z/data=!3m1!4b1!4m6!3m5!1s0x9bdc06b48fe2c3:0xae21ae5620a645ab!8m2!3d-22.9659884!4d-43.4105743!16s%2Fg%2F11rkl5hyps?entry=ttu&g_ep=EgoyMDI0MDkyOS4wIKXMDSoASAFQAw%3D%3D"
+                              target="_blank"
+                              >Estr. dos Bandeirantes, 7431 - Jacarepaguá, Rio de Janeiro - RJ, 22780-081</a
+                          >
+                      </p>
+                  </div>
+
+                  
+              </div>
+
+              <div class="menu">
+                  <a href="/sobre">Sobre</a>
+                  <a href="/solucoes/omid-cloud">Omid Cloud</a>
+                  <a href="/solucoes/data-center">Data Centers</a>
+                  <a href="/solucoes/cyber-security">Cibersegurança</a>
+                  <a href="/solucoes/it-services">Soluções de TI</a>
+                  <a href="/blog">Blog</a>
+                  <a href="/carreiras">Trabalhe Conosco</a>
+                  <a href="/integridade-e-compliance">Integridade e Compliance</a>
+                  <a href="#" data-open-form>Contato</a>
+                  <a href="/wp-content/uploads/2024/10/POLT-006-Politica-de-Protecao-de-Dados-V1.1.1.pdf" target="_blank">Política de Proteção de Dados</a>
+                  <a href="/wp-content/uploads/2024/10/POLT-005-Politica-de-Privacidade-V1.1.1.pdf" target="_blank">Política de Privacidade</a>
+                  <a href="/wp-content/uploads/2025/01/POLT-007-Politica-da-Qualidade-V1.1.1.pdf" target="_blank">Política da Qualidade</a>
+              </div>
+
+              <div class="copy">
+                  <p>&copy; 2024 Omid Solutions. Todos os Direitos Reservados.</p>
+              </div>
+          </div>
+      </footer>
+
+      <script>
+          let isFormOpen = false;
+
+          const formWrapper = document.querySelector(".form-wrapper");
+          const buttonsOpenForm = Array.from(document.querySelectorAll("[data-open-form]"));
+          const overlay = document.querySelector(".overlay");
+          const buttonCloseForm = document.querySelector('.form-close')
+
+          function closeForm() {
+              isFormOpen = false;
+              formWrapper.classList.remove("active");
+              overlay.style.display = "none";
+          }
+
+          buttonsOpenForm.forEach((button) => {
+              button.addEventListener("click", (e) => {
+              if (isFormOpen) return;
+              if (!formWrapper) return;
+
+              isFormOpen = true;
+              overlay.style.display = "block";
+              formWrapper.classList.add("active");
+              });
+          });
+
+          if (formWrapper) {
+              overlay.addEventListener("click", (e) => {
+                  closeForm()
+              });
+          }
+
+          if(buttonCloseForm) {
+              buttonCloseForm.addEventListener('click', e => {
+                  closeForm()
+              })
+          }
+      </script>
+
+      <!-- JS -->
+      <script src="/js/global.js"></script>
+      <script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/a0cf7067-8c96-4c07-86df-bc2b133f7895-loader.js" ></script>
+
+      <script>
+      // get the "contact" param from url and open contact form
+      document.addEventListener("DOMContentLoaded", () => {
+          const queryString = window.location.search
+          const urlParams = new URLSearchParams(queryString)
+
+          const isContact = urlParams.get("contact")
+
+          if (isContact) {
+          const buttonOpenForm = document.querySelector("[data-open-form]")
+
+          if (!buttonOpenForm) return
+
+          buttonOpenForm.click()
+          }
+      })
+      </script>
+
+
+
+      <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWG8FCMC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+     
+  </body>
+</html>

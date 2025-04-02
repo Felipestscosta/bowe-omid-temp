@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cloud flexível, segura e com previsibilidade de custos</title>
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            href="https://www.omidsolutions.com/wp-content/uploads/2024/06/cropped-favicon-32x32.png"
+            type="image/x-icon"
+        />
+        <link
+            rel="shortcut icon"
+            href="https://www.omidsolutions.com/wp-content/uploads/2024/06/cropped-favicon-32x32.png"
+            type="image/x-icon"
+        />
+
+        <!-- Metas -->
+        <meta
+            name="description"
+            content="Conte com a OMID para ter soluções de cloud robustas e eficientes, impulsionando sua operação e estrutura de TI. "
+        />
+
+        <!-- OG -->
+        <meta name="og:title" content="Cloud flexível, segura e com previsibilidade de custos" />
+        <meta
+            name="og:description"
+            content="Conte com a OMID para ter soluções de cloud robustas e eficientes, impulsionando sua operação e estrutura de TI. "
+        />
+        <meta name="og:image" content="" />
+
+        <!-- Preload -->
+        <link rel="preload" href="images/logo-horizontal.svg" as="image" type="image/svg+xml" />
+        <link rel="preload" href="images/hero-pattern.svg" as="image" type="image/svg+xml" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./styles/css/style.css" />
+
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+    <body>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="content">
+                    <img src="images/logo-horizontal.svg" width="241" height="80" alt="Omid" />
+
+                    <h1 class="section-title">
+                        <span>Serviços de cloud</span><br />
+                        flexíveis, confiáveis <br />
+                        e com previsibilidade <br />
+                        de custos
+                    </h1>
+
+                    <p>
+                        Conte com a OMID para ter soluções robustas e eficientes, impulsionando sua operação. Tenha
+                        flexibilidade, segurança e suporte contínuo para alcançar resultados reais, com custos
+                        previsíveis.
+                    </p>
+                </div>
+
+                <div class="form" id="form">
+                    <button class="close-form" aria-label="Fechar formulário">
+                        <img src="./images/close-form.png" aria-hidden="true" alt="" />
+                    </button>
+
+                    <div class="form-header">
+                        <h3>Preencha o formulário e simplifique a sua jornada para a nuvem</h3>
+                        <p>Não se preocupe, seus dados estarão sempre seguros conosco.</p>
+                    </div>
+
+                    <form>
+                        <label class="field">
+                            Nome*
+                            <input type="text" name="nome" data-field />
+                        </label>
+
+                        <label class="field">
+                            Sobrenome*
+                            <input type="text" name="Sobrenome" data-field />
+                        </label>
+
+                        <label class="field">
+                            Email profissional*
+                            <input type="text" name="email" data-field />
+                        </label>
+
+                        <label class="field">
+                            Telefone*
+                            <input type="text" name="telefone" maxlength="15" data-field />
+                        </label>
+
+                        <label class="field">
+                            Cargo*
+                            <select name="Cargo - Dropdown" data-field="cargo">
+                                <option value=""></option>
+                                <option value="Dono / Sócio / Proprietário">Dono / Sócio / Proprietário</option>
+                                <option value="C-level">C-level</option>
+                                <option value="Gerente">Gerente</option>
+                                <option value="Coordenador">Coordenador</option>
+                                <option value="Consultor">Consultor</option>
+                                <option value="Especialista ou Analista">Especialista ou Analista</option>
+                                <option value="Assistente">Assistente</option>
+                                <option value="Outros cargos">Outros</option>
+                            </select>
+                        </label>
+
+                        <label class="field">
+                            Nº de funcionários da empresa*
+                            <select name="Número de funcionários" data-field="funcionarios">
+                                <option value=""></option>
+                                <option value="1-49">1-49</option>
+                                <option value="50-249">50-249</option>
+                                <option value="250 - 499">250 - 499</option>
+                                <option value="500 - 999">500 - 999</option>
+                                <option value="1.000 - 1.999">1.000 - 1.999</option>
+                                <option value="2.000 - 4.999">2.000 - 4.999</option>
+                                <option value="5.000 - 9.999">5.000 - 9.999</option>
+                                <option value="10.000 ou +">10.000 ou +</option>
+                            </select>
+                        </label>
+
+                        <label class="field">
+                            Sobre o que você deseja conversar?*
+                            <select name="Sobre o que você deseja conversar?" data-field="assunto">
+                                <option value=""></option>
+                                <option value="Serviços de Cloud">Serviços de Cloud</option>
+                                <option value="Serviços de Data center">Serviços de Data center</option>
+                                <option value="Serviços de TI">Serviços de TI</option>
+                                <option value="Cibersegurança">Cibersegurança</option>
+                                <option value="Programa de parcerias Omid">Programa de parcerias Omid</option>
+                                <option value="Outro assunto">Outro assunto</option>
+                            </select>
+                        </label>
+
+                        <input type="hidden" name="utm_term" data-field />
+                        <input type="hidden" name="utm_content" data-field />
+                        <input type="hidden" name="utm_campaign" data-field />
+                        <input type="hidden" name="utm_source" data-field />
+                        <input type="hidden" name="utm_medium" data-field />
+                        <input type="hidden" name="url_pagina" data-field />
+
+                        <a class="btn form-submit span">Enviar</a>
+                    </form>
+                </div>
+            </div>
+
+            <div class="bg">
+                <img src="./images/hero-pattern.svg" width="1920" height="1121" aria-hidden="true" alt="" />
+            </div>
+        </section>
+
+        <!-- Cloud -->
+        <section class="cloud spacing">
+            <div class="container cloud_container">
+                <h2 class="section-title center">
+                    Qual a diferença entre a <span>OMID</span> e outros serviços de cloud?
+                </h2>
+
+                <ul class="icons">
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-01.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Alta performance nas instâncias de entrada</p>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-02.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Suporte humano especializado</p>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-03.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Contrato fixo sem repasse de variação do dólar</p>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-04.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Sem cobrança de dados trafegados</p>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-05.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Sem cobranças extras surpresas como IOPS, snapshots, entre outros</p>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-06.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Sem estratégia de lock-in que dificulta a migração</p>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-07.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Link de dados dedicado lan-to-lan no mesmo contrato</p>
+                    </li>
+
+                    <li>
+                        <div>
+                            <img
+                                src="./images/list-icon-08.svg"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                width="80"
+                                height="80"
+                                alt=""
+                            />
+                        </div>
+                        <p>Centro de defesa cibernética 24x07</p>
+                    </li>
+                </ul>
+
+                <ul class="numbers">
+                    <li>
+                        <h3>+2</h3>
+                        <p>Data Centers no Brasil padrão Tier III</p>
+                    </li>
+
+                    <li>
+                        <h3>+7.500</h3>
+                        <p>máquinas virtuais</p>
+                    </li>
+
+                    <li>
+                        <h3>+500</h3>
+                        <p>terabytes de dados armazenados</p>
+                    </li>
+
+                    <li>
+                        <h3>20% a 40%</h3>
+                        <p>de redução em custos com maior performance</p>
+                    </li>
+                </ul>
+
+                <a href="#form" class="btn center">Comece a economizar agora</a>
+            </div>
+        </section>
+
+        <!-- Slides -->
+        <section class="slides spacing">
+            <div class="container slides_container">
+                <div class="content">
+                    <h2 class="section-title"><span>Soluções integradas</span> para impulsionar sua operação</h2>
+
+                    <p>
+                        Descubra como as soluções da OMID podem simplificar, proteger e impulsionar o desempenho do seu
+                        negócio.
+                    </p>
+                    <a href="#form" class="btn">Explore as soluções OMID</a>
+                </div>
+
+                <div class="slider">
+                    <div class="swiper slidesSwiper">
+                        <div class="swiper-wrapper">
+                            <article class="swiper-slide" style="--color: var(--clr-accent-yellow)">
+                                <div>
+                                    <span>OMID Cloud</span>
+                                    <h3>Liberdade e desempenho sem limites</h3>
+                                </div>
+                                <ul>
+                                    <li>Flexibilidade total para customizar recursos na nuvem.</li>
+                                    <li>Backup em nuvem com proteção avançada de dados.</li>
+                                    <li>Expansão de armazenamento sem necessidade de hardware.</li>
+                                    <li>Performance garantida para projetos de inteligência artificial.</li>
+                                    <li>Virtualização de desktops para otimizar custos operacionais.</li>
+                                </ul>
+                            </article>
+
+                            <article class="swiper-slide" style="--color: var(--clr-accent-green)">
+                                <div>
+                                    <span>Data Centers</span>
+                                    <h3>Segurança e eficiência para operações críticas</h3>
+                                </div>
+                                <ul>
+                                    <li>Infraestrutura Tier III para máxima disponibilidade e confiabilidade.</li>
+                                    <li>Sistemas redundantes garantem operação ininterrupta.</li>
+                                    <li>Eficiência energética para reduzir custos e impactos.</li>
+                                    <li>Proteção avançada com Sala Cofre Certificada ABNT 15.247.</li>
+                                    <li>Suporte especializado para atender suas demandas únicas.</li>
+                                </ul>
+                            </article>
+
+                            <article class="swiper-slide" style="--color: var(--clr-accent-orange)">
+                                <div>
+                                    <span>Cibersegurança</span>
+                                    <h3>Proteção completa contra ameaças digitais</h3>
+                                </div>
+                                <ul>
+                                    <li>Monitoramento contínuo para identificar e conter ataques.</li>
+                                    <li>Backups seguros para recuperação rápida em caso de crise.</li>
+                                    <li>Testes regulares que identificam vulnerabilidades críticas.</li>
+                                    <li>Rastreio de ameaças em dark web e redes digitais.</li>
+                                    <li>Gestão completa de cibersegurança com soluções integradas.</li>
+                                </ul>
+                            </article>
+
+                            <article class="swiper-slide" style="--color: var(--clr-accent-blue)">
+                                <div>
+                                    <span>Serviços de TI</span>
+                                    <h3>Libere o potencial das suas equipes</h3>
+                                </div>
+                                <ul>
+                                    <li>Simplifique operações com total integração à infraestrutura Omid.</li>
+                                    <li>Libere sua TI para focar em projetos estratégicos.</li>
+                                    <li>Concentre todos os serviços de TI com um único parceiro.</li>
+                                    <li>Conte com especialistas certificados e experientes.</li>
+                                    <li>Migração e gestão completas para sua operação de TI.</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="controls">
+                        <button class="slides-button-prev" aria-label="Anterior">
+                            <svg
+                                width="13"
+                                height="24"
+                                viewBox="0 0 13 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.5"
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M12.6192 1.25414C12.1116 0.755132 11.2884 0.755132 10.7808 1.25414L0.380762 11.4764C-0.126921 11.9754 -0.126921 12.7844 0.380762 13.2834L10.7808 23.5056C11.2884 24.0046 12.1116 24.0046 12.6192 23.5056C13.1269 23.0066 13.1269 22.1976 12.6192 21.6986L3.13848 12.3799L12.6192 3.06119C13.1269 2.56218 13.1269 1.75314 12.6192 1.25414Z"
+                                    fill="#616161"
+                                />
+                            </svg>
+                        </button>
+
+                        <div class="slides-pagination"></div>
+
+                        <button class="slides-button-next" aria-label="Próximo">
+                            <svg
+                                width="13"
+                                height="24"
+                                viewBox="0 0 13 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    opacity="0.5"
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M0.380761 23.5056C0.888443 24.0046 1.71156 24.0046 2.21924 23.5056L12.6192 13.2834C13.1269 12.7844 13.1269 11.9754 12.6192 11.4764L2.21924 1.25413C1.71156 0.755131 0.888447 0.755131 0.380765 1.25413C-0.126917 1.75314 -0.126917 2.56218 0.380765 3.06118L9.86152 12.3799L0.380762 21.6986C-0.12692 22.1976 -0.12692 23.0066 0.380761 23.5056Z"
+                                    fill="#616161"
+                                />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="cards spacing">
+            <div class="container cards_container">
+                <h2 class="section-title center">
+                    Por que reunir suas estratégias híbridas na <span>Omid Cloud?</span>
+                </h2>
+
+                <div class="cards">
+                    <article>
+                        <div>
+                            <img
+                                src="./images/cards-icon-01.svg"
+                                width="64"
+                                height="64"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3>Simplifique sua operação</h3>
+                            <p>
+                                Configure e gerencie recursos no portal Omid com total autonomia e agilidade. Elimine
+                                limites e burocracias.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div>
+                            <img
+                                src="./images/cards-icon-02.svg"
+                                width="64"
+                                height="64"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3>Controle total dos custos</h3>
+                            <p>
+                                Tenha previsibilidade com valores fixos e sem surpresas. Esqueça variações e cobranças
+                                extras inesperadas.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div>
+                            <img
+                                src="./images/cards-icon-03.svg"
+                                width="64"
+                                height="64"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3>Suporte sempre disponível</h3>
+                            <p>
+                                Conte com especialistas prontos para ajudar 24/7. Atendimento rápido e personalizado,
+                                incluindo um 0800 exclusivo.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div>
+                            <img
+                                src="./images/cards-icon-04.svg"
+                                width="64"
+                                height="64"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3>Infraestrutura de confiança</h3>
+                            <p>
+                                Opere com segurança e resiliência. Data centers Tier III garantem alta disponibilidade
+                                para suas operações.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div>
+                            <img
+                                src="./images/cards-icon-05.svg"
+                                width="64"
+                                height="64"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3>Performance inigualável</h3>
+                            <p>
+                                Recursos dedicados 100% do tempo. Garanta desempenho máximo sem compartilhamento ou
+                                instabilidades.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div>
+                            <img
+                                src="./images/cards-icon-06.svg"
+                                width="64"
+                                height="64"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                        </div>
+                        <div>
+                            <h3>Liberdade para decidir</h3>
+                            <p>
+                                Mude quando quiser, sem amarras contratuais. Flexibilidade total para migrar workloads
+                                com autonomia.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <a href="#form" class="btn center">Transforme sua TI com um clique</a>
+            </div>
+        </section>
+
+        <!-- Certifies -->
+        <section class="certifies spacing">
+            <div class="container certifies_container">
+                <h2 class="section-title center"><span>Certificações</span> que fazem a diferença</h2>
+                <ul>
+                    <li>
+                        <img
+                            src="./images/certifies-01.webp"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            width="321"
+                            height="59"
+                            alt=""
+                        />
+                    </li>
+
+                    <li>
+                        <img
+                            src="./images/certifies-02.webp"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            width="242"
+                            height="92"
+                            alt=""
+                        />
+                    </li>
+
+                    <li>
+                        <img
+                            src="./images/certifies-03.webp"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            width="251"
+                            height="95"
+                            alt=""
+                        />
+                    </li>
+
+                    <li>
+                        <img
+                            src="./images/certifies-04.webp"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            width="251"
+                            height="95"
+                            alt=""
+                        />
+                    </li>
+
+                    <li>
+                        <img
+                            src="./images/abnt.png"
+                            aria-hidden="true"
+                            loading="lazy"
+                            decoding="async"
+                            width="179"
+                            height="106"
+                            alt=""
+                        />
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Banner -->
+        <section class="banner spacing">
+            <div class="container banner_container">
+                <h2 class="section-title center">Faça uma <span>escolha inteligente</span></h2>
+                <p class="center lg">
+                    Fale com um especialista OMID e veja como simplificar, proteger e otimizar sua operação de TI.
+                </p>
+                <a href="#form" class="btn center">Agendar conversa</a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="col-1">
+                    <div>
+                        <img
+                            src="./images/logo-vertical.svg"
+                            width="133"
+                            height="143"
+                            alt="Omid"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </div>
+                    <p>&copy; 2025 Omid Solutions.</p>
+                    <p>Todos os Direitos Reservados.</p>
+                </div>
+
+                <div class="col-2">
+                    <div>
+                        <h4>DC Omid Barueri</h4>
+                        <a href="tel:08008781250" target="_blank">
+                            <img
+                                src="./images/icon-phone.svg"
+                                width="16"
+                                height="16"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                            SAC/NOC (24x7): 0800 878 1250
+                        </a>
+
+                        <a href="https://wa.me/5511999562354" target="_blank">
+                            <img
+                                src="./images/icon-whatsapp.svg"
+                                width="16"
+                                height="16"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                            +55 11 99956-2354
+                        </a>
+
+                        <a href="tel:551144104300" target="_blank">
+                            <img
+                                src="./images/icon-phone.svg"
+                                width="16"
+                                height="16"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                            Comercial/Financeiro: +55 11 4410-4300
+                        </a>
+
+                        <a
+                            href="https://www.google.com.br/maps/@-23.4923308,-46.8357696,3a,84.5y,208.84h,95.16t/data=!3m7!1e1!3m5!1s5CV4jXYjhsNAnaN69FaD0g!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3D5CV4jXYjhsNAnaN69FaD0g%26cb_client%3Dmaps_sv.share%26w%3D900%26h%3D600%26yaw%3D193.8300696947755%26pitch%3D13.239087341675287%26thumbfov%3D90!7i16384!8i8192?coh=205409&entry=ttu"
+                            target="_blank"
+                            style="margin-top: 2rem"
+                        >
+                            <img
+                                src="./images/icon-location.svg"
+                                width="16"
+                                height="18"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                            Av. Aruanã, 452, Tamboré - Barueri - SP CEP: 06460-010
+                        </a>
+                    </div>
+
+                    <div>
+                        <h4>DC Omid Rio de Janeiro</h4>
+                        <a href="tel:552139009832" target="_blank">
+                            <img
+                                src="./images/icon-phone.svg"
+                                width="16"
+                                height="16"
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                                alt=""
+                            />
+                            Comercial/Financeiro: +55 21 3900-9832
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <button class="btn btn-mobile">FALAR COM ESPECIALISTA</button>
+
+        <!-- RD Station -->
+        <script
+            type="text/javascript"
+            async
+            src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/a0cf7067-8c96-4c07-86df-bc2b133f7895-loader.js"
+        ></script>
+        <script
+            type="text/javascript"
+            defer
+            src="https://d335luupugsy2.cloudfront.net/js/integration/stable/rd-js-integration.min.js"
+        ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        <script src="js/validations.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- GTM -->
+        <script>
+            ;(function (w, d, s, l, i) {
+                w[l] = w[l] || []
+                w[l].push({
+                    "gtm.start": new Date().getTime(),
+                    event: "gtm.js",
+                })
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != "dataLayer" ? "&l=" + l : ""
+                j.async = true
+                j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+                f.parentNode.insertBefore(j, f)
+            })(window, document, "script", "dataLayer", "GTM-PWG8FCMC")
+        </script>
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-PWG8FCMC"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+    </body>
+</html>

@@ -1,0 +1,282 @@
+.btn-mobile {
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    outline: none;
+    border: none;
+    color: var(--clr-neutral-100);
+    padding: 1.25rem 2.5rem;
+    background-color: var(--clr-accent-blue);
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-family: var(--ff-primary);
+    text-align: center;
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 99999;
+    max-width: 100% !important;
+    box-shadow: 0px 0px 10px 1px rgba(0 0 0 / 0.25);
+    border-radius: 0.5rem;
+
+    &:hover,
+    &:focus {
+        transition: filter 300ms linear;
+        will-change: filter;
+        filter: brightness(0.9);
+    }
+
+    &::after {
+        display: none !important;
+    }
+
+    @media (min-width: 1200px) {
+        display: none !important;
+    }
+}
+
+.form {
+    display: grid;
+
+    gap: 1rem;
+    z-index: 999999999;
+    position: relative;
+
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    padding: 2rem 5%;
+
+    background: #1e1e1e;
+    backdrop-filter: blur(4px);
+
+    h3 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+        max-width: 30ch;
+        color: var(--clr-neutral-100);
+    }
+
+    p {
+        margin-block: 0 2rem;
+        max-width: 30ch;
+    }
+
+    &.open {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        -webkit-animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    }
+
+    .close-form {
+        outline: none;
+        border: none;
+        background: none;
+        font-size: 1rem;
+        font-weight: 600;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 1.5rem;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        aspect-ratio: 1;
+        font-family: var(--ff-secondary);
+        filter: invert(100%);
+
+        &:focus,
+        &:hover {
+            outline: 1px solid var(--clr-accent-yellow);
+        }
+    }
+
+    form {
+        --gap: 1rem;
+
+        display: grid;
+        gap: 1.5rem;
+        column-gap: 3rem;
+    }
+
+    label {
+        color: #dcdcdc;
+    }
+
+    input:not([type="checkbox"]),
+    select,
+    textarea {
+        display: block;
+        width: 100%;
+        min-height: 40px;
+        padding: 0.5rem 0;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #edf5f440;
+        transition: border-color 200ms linear;
+        color: #ffffff;
+
+        &:focus {
+            border-color: var(--clr-accent-blue);
+        }
+
+        &::placeholder {
+            color: var(--clr-placeholder);
+        }
+    }
+
+    textarea {
+        resize: none;
+        height: 75px !important;
+    }
+
+    .consent-label {
+        font-size: 0.8rem;
+        color: var(--clr-neutral-700);
+        line-height: 1.5;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-block: 1.75rem;
+
+        a {
+            text-decoration: underline;
+            text-decoration-color: #d9d9d9;
+            transition: all 200ms ease;
+
+            &:hover {
+                text-decoration-color: var(--clr-accent-blue);
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        margin-top: 0.25rem;
+        accent-color: var(--clr-accent-blue-light);
+        color: var(--clr-neutral-100);
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("../../images/dropdown.svg");
+        background-position-x: 100%;
+        background-position-y: 23px;
+        background-repeat: no-repeat;
+        padding-right: 1.25rem;
+
+        &::-ms-expand {
+            display: none;
+        }
+
+        option {
+            color: var(--clr-neutral-100);
+            background-color: var(--clr-neutral-700);
+        }
+    }
+
+    .form-submit {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding-block: 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        display: block !important;
+        padding: 0.625rem !important;
+
+        &::after {
+            display: none !important;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        display: unset;
+        position: unset;
+        visibility: visible;
+        opacity: 1;
+        height: unset;
+
+        padding: 2.5rem;
+        z-index: 99;
+        border-radius: 8px;
+        border: 2px solid #e95255;
+
+        // form {
+        //     grid-template-columns: 1fr 1fr;
+
+        //     .span {
+        //         grid-column: span 2;
+        //     }
+        // }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .close-form {
+            display: none;
+        }
+    }
+}
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.swal2-popup {
+    background: var(--clr-neutral-700) !important;
+}
+
+.swal2-container {
+    z-index: 9999999 !important;
+}
+
+.swal2-confirm.swal2-styled {
+    background-color: var(--clr-accent-orange) !important;
+}
+
+.swal2-content {
+    color: var(--clr-accent-blue-dark) !important;
+    font-size: 1.4rem !important;
+}
+
+.swal2-icon.swal2-warning {
+    border-color: var(--clr-accent-orange) !important;
+    color: var(--clr-accent-orange) !important;
+}

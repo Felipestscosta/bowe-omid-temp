@@ -1,0 +1,182 @@
+.page-compliance {
+  overflow-x: hidden;
+
+  .hero {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    z-index: 2;
+
+    @media (min-width: 1180px) {
+      min-height: 24.0625rem;
+    }
+
+    &__container {
+      z-index: 1;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 3.5vw, 3.2rem);
+    }
+
+    .bg {
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 30%;
+
+        @media (min-width: 45em) {
+          object-position: 60%;
+        }
+
+        @media (min-width: 1000px) {
+          object-position: center;
+        }
+
+        @media (min-width: 1180px) {
+          object-position: right;
+        }
+      }
+    }
+  }
+
+  .legal {
+    .texts {
+      p + p {
+        margin-top: 1.25rem;
+      }
+
+      a:hover,
+      a:focus {
+        text-decoration: underline;
+      }
+
+      h2 {
+        margin-block: 2.5rem;
+      }
+    }
+
+    .form {
+      padding-top: 4rem;
+      display: grid;
+      isolation: isolate;
+
+      h3 {
+        font-size: clamp(1.65rem, 3.5vw, 2rem);
+        margin-bottom: 3rem;
+        color: #fbbc43;
+      }
+
+      .image {
+        position: absolute;
+        top: -250%;
+        z-index: 0;
+        right: 0;
+        pointer-events: none;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+
+        @media (max-width: 1400px) {
+          display: none;
+        }
+      }
+
+      form {
+        z-index: 1;
+      }
+
+      textarea {
+        border-radius: 8px;
+        border: 2px solid rgba(97, 97, 97, 0.3);
+        background: #101010;
+        backdrop-filter: blur(4px);
+        width: 100%;
+        resize: none;
+        min-height: 170px;
+        color: #fff;
+        padding: clamp(0.5rem, 3.5vw, 1rem);
+
+        outline: none;
+      }
+
+      button,
+      a {
+        margin-top: 1.5rem;
+      }
+    }
+
+    .buttons {
+      margin-top: 5rem;
+      display: grid;
+      gap: 1rem;
+
+      .button-secondary {
+        color: #ffffff;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+
+        text-wrap: wrap;
+
+        span {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      @media (min-width: 60em) {
+        grid-template-columns: repeat(2, max-content);
+
+        .button-secondary {
+          font-size: 1rem;
+
+          span {
+            &::after {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .denuncias {
+    display: grid;
+    gap: 3rem;
+
+    @media (min-width: 45em) {
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    article {
+      > div {
+        display: flex;
+        align-items: center;
+        gap: 1.875rem;
+        margin-bottom: 2.5rem;
+
+        h4 {
+          font-size: clamp(1.5rem, 3.5vw, 2rem);
+          font-weight: 700;
+        }
+      }
+
+      p {
+        max-width: 33rem;
+      }
+    }
+  }
+}
