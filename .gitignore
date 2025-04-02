@@ -1,1 +1,7 @@
 node_modules
+package-lock.json
+package.json
+
+/cloud-flexivel/package-lock.json
+/cloud-flexivel/package.json
+/cloud-flexivel/node_modules
